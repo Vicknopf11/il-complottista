@@ -103,7 +103,39 @@ Formato esatto:
     if not match:
         raise ValueError(f"Nessun JSON trovato nella risposta:\n{testo}")
 
-    return json.loads(match.group())
+    raw = match.group()
+
+    # Strategia 1: parse diretto
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
+    # Strategia 2: sanifica apostrofi tipografici
+    raw2 = raw.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '\"').replace("\u201d", '\"')
+    try:
+        return json.loads(raw2)
+    except json.JSONDecodeError:
+        pass
+
+    # Strategia 3: estrai post uno per uno
+    try:
+        posts = []
+        for block in re.finditer(r'\{[^{}]*"categoria"[^{}]*\}', raw, re.DOTALL):
+            try:
+                posts.append(json.loads(block.group()))
+            except Exception:
+                pass
+        if posts:
+            data_match = re.search(r'"data"\s*:\s*"(\d{4}-\d{2}-\d{2})"', raw)
+            return {
+                "data": data_match.group(1) if data_match else datetime.now().strftime("%Y-%m-%d"),
+                "post": posts
+            }
+    except Exception:
+        pass
+
+    raise ValueError(f"Impossibile parsare il JSON:\n{raw[:500]}")
 
 
 def aggiorna_archivio(nuova_edizione: dict) -> None:
