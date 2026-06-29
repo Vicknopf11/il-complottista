@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Complottista — Artificioso</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Share+Tech+Mono&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Special Elite', 'Courier New', serif;
+      background: #0a0a0a;
+      color: #c8d8b0;
+      min-height: 100vh;
+    }
+
+    /* ── DISCLAIMER BANNER ── */
+    .disclaimer-banner {
+      background: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #0d1a0d;
+      color: #7fff7f;
+      text-align: center;
+      padding: 2rem 1rem 1.5rem;
+      border-bottom: 2px solid #2a4a2a;
+      position: relative;
+    }
+
+    header::before {
+      content: '▓▒░ TRASMISSIONE CIFRATA ░▒▓';
+      display: block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65rem;
+      color: #2a6a2a;
+      letter-spacing: 0.2em;
+      margin-bottom: 0.8rem;
+    }
+
+    .header-top {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.7rem;
+      color: #4a8a4a;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.7rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.08em;
+      color: #7fff7f;
+      text-shadow: 0 0 20px rgba(127,255,127,0.3);
+    }
+
+    .organo {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+      color: #4a8a4a;
+      margin-top: 0.4rem;
+      letter-spacing: 0.1em;
+    }
+
+    .citazione {
+      font-size: 1rem;
+      color: #9abf9a;
+      font-style: italic;
+      margin: 0.8rem auto 0;
+      border-top: 1px solid #1a3a1a;
+      border-bottom: 1px solid #1a3a1a;
+      padding: 0.5rem 2rem;
+      display: inline-block;
+    }
+
+    .nessuna-notizia {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65rem;
+      color: #2a5a2a;
+      margin-top: 0.5rem;
+      letter-spacing: 0.08em;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #4a8a4a;
+      text-decoration: none;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+      margin: 0 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #7fff7f; }
+
+    #data-aggiornamento {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65rem;
+      color: #2a5a2a;
+      margin-top: 0.4rem;
+    }
+
+    /* ── TAB BAR ── */
+    .tab-bar {
+      background: #050f05;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #1a3a1a;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: #2a5a2a;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: -1px;
+    }
+
+    .tab-btn:hover { color: #7fff7f; }
+    .tab-btn.attivo { color: #7fff7f; border-bottom-color: #7fff7f; }
+
+    /* ── ARCHIVIO BAR ── */
+    .archivio-bar {
+      background: #080f08;
+      border-bottom: 1px solid #1a3a1a;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .archivio-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68rem;
+      color: #2a5a2a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    #selettore-data {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+      background: #0d1a0d;
+      border: 1px solid #2a4a2a;
+      padding: 0.3rem 0.6rem;
+      color: #7fff7f;
+      cursor: pointer;
+    }
+
+    .btn-nav {
+      background: #0d1a0d;
+      color: #7fff7f;
+      border: 1px solid #2a4a2a;
+      padding: 0.3rem 0.7rem;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-nav:hover { background: #1a3a1a; }
+    .btn-nav:disabled { color: #2a4a2a; cursor: default; }
+
+    .rss-link {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68rem;
+      color: #4a8a4a;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+    }
+
+    .rss-link:hover { color: #7fff7f; }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .edizione { margin-bottom: 3rem; }
+
+    .edizione-header {
+      border-bottom: 1px solid #1a3a1a;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.4rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .edizione-data {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.85rem;
+      color: #4a8a4a;
+      letter-spacing: 0.1em;
+    }
+
+    .edizione-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65rem;
+      color: #2a5a2a;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── POST CARD ── */
+    .categoria-label {
+      display: inline-block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #0a0a0a;
+      background: #7fff7f;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .categoria-label.cosmici    { background: #7f7fff; }
+    .categoria-label.mondiali   { background: #ff7f7f; }
+    .categoria-label.finanziari { background: #ffdf7f; color: #1a1a00; }
+    .categoria-label.sportivi   { background: #7fffff; color: #001a1a; }
+    .categoria-label.tecnologici{ background: #7fff7f; }
+
+    .post-card {
+      background: #0d150d;
+      border: 1px solid #1a3a1a;
+      border-left: 3px solid #7fff7f;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.4rem;
+      position: relative;
+    }
+
+    .post-card::before {
+      content: '▌DOSSIER RISERVATO▐';
+      display: block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.55rem;
+      color: #1a3a1a;
+      letter-spacing: 0.2em;
+      margin-bottom: 0.6rem;
+    }
+
+    .post-card.cosmici    { border-left-color: #7f7fff; }
+    .post-card.mondiali   { border-left-color: #ff7f7f; }
+    .post-card.finanziari { border-left-color: #ffdf7f; }
+    .post-card.sportivi   { border-left-color: #7fffff; }
+    .post-card.tecnologici{ border-left-color: #7fff7f; }
+
+    .post-titolo {
+      font-size: 1.05rem;
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+      line-height: 1.4;
+      color: #c8d8b0;
+    }
+
+    .post-testo {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin-bottom: 0.8rem;
+      color: #8aaa8a;
+    }
+
+    .post-footer {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 1px solid #1a3a1a;
+      padding-top: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .btn-copia {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68rem;
+      background: #0d1a0d;
+      color: #4a8a4a;
+      border: 1px solid #2a4a2a;
+      padding: 0.3rem 0.8rem;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+    }
+
+    .btn-copia:hover { color: #7fff7f; border-color: #7fff7f; }
+    .btn-copia.copiato { color: #7fff7f; border-color: #7fff7f; }
+
+    #loading {
+      text-align: center;
+      padding: 3rem;
+      color: #2a5a2a;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65rem;
+      color: #2a4a2a;
+      border-top: 1px solid #1a3a1a;
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+
+    footer a { color: #2a5a2a; text-decoration: none; }
+    footer a:hover { color: #7fff7f; }
+  </style>
+</head>
+<body>
+
+<div class="disclaimer-banner">
+  ⚠️ SATIRA — Tutti i complotti pubblicati sono interamente inventati. Contenuto generato da intelligenza artificiale. ⚠️
+</div>
+
+<header>
+  <div class="header-top" id="data-oggi"></div>
+  <h1>Il Complottista</h1>
+  <p class="organo">— ARTIFICIOSO —</p>
+  <p class="citazione">&laquo;Se non hai un complotto hai un complesso.&raquo;</p>
+  <p class="nessuna-notizia">TRASMISSIONE AUTORIZZATA DAL PROF. ANACLETO WINSTON VEX'LAAR TRAMONTANA-BERMÚDEZ DETTO "IL MUTO"</p>
+  <nav>
+    <a href="index.html">Dossier</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+  </nav>
+  <div id="data-aggiornamento"></div>
+</header>
+
+<div class="tab-bar">
+  <button class="tab-btn attivo" data-cat="tutte">Tutti</button>
+  <button class="tab-btn" data-cat="cosmici">Cosmici</button>
+  <button class="tab-btn" data-cat="mondiali">Mondiali</button>
+  <button class="tab-btn" data-cat="finanziari">Finanziari</button>
+  <button class="tab-btn" data-cat="sportivi">Sportivi</button>
+  <button class="tab-btn" data-cat="tecnologici">Tecnologici</button>
+</div>
+
+<div class="archivio-bar">
+  <span class="archivio-label">Dossier:</span>
+  <select id="selettore-data"></select>
+  <div style="display:flex;gap:0.4rem">
+    <button class="btn-nav" id="btn-prec">&#8592;</button>
+    <button class="btn-nav" id="btn-succ">&#8594;</button>
+  </div>
+  <a class="rss-link" href="feed.xml">&#9654; RSS</a>
+</div>
+
+<main id="contenuto">
+  <div id="loading">// DECRITTAZIONE IN CORSO... //</div>
+</main>
+
+<footer>
+  IL COMPLOTTISTA — ARTIFICIOSO · TUTTI I SEGRETI SATIRICAMENTE RISERVATI<br>
+  TUTTI I COMPLOTTI SONO INVENTATI · SATIRA GENERATA DA INTELLIGENZA ARTIFICIALE<br>
+  DOSSIER PRODOTTI OGNI MATTINA DAL SISTEMA · <a href="chi-siamo.html">CHI SIAMO · IL PROF. VEX'LAAR</a> · <a href="feed.xml">RSS</a>
+</footer>
+
+<script>
+function esc(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatData(d) {
+  if (!d) return '';
+  const [y, m, g] = d.split('-');
+  const mesi = ['','gennaio','febbraio','marzo','aprile','maggio','giugno',
+                'luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  const giorni = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+  const data = new Date(y, parseInt(m)-1, parseInt(g));
+  return `${giorni[data.getDay()]} ${parseInt(g)} ${mesi[parseInt(m)]} ${y}`;
+}
+
+function slugCategoria(cat) {
+  if (!cat) return '';
+  const c = cat.toLowerCase();
+  if (c.includes('cosm'))   return 'cosmici';
+  if (c.includes('mond'))   return 'mondiali';
+  if (c.includes('finan'))  return 'finanziari';
+  if (c.includes('sport'))  return 'sportivi';
+  if (c.includes('tecn'))   return 'tecnologici';
+  return '';
+}
+
+// Data header
+(function() {
+  const d = new Date();
+  const giorni = ['DOMENICA','LUNEDÌ','MARTEDÌ','MERCOLEDÌ','GIOVEDÌ','VENERDÌ','SABATO'];
+  const mesi = ['GENNAIO','FEBBRAIO','MARZO','APRILE','MAGGIO','GIUGNO',
+                'LUGLIO','AGOSTO','SETTEMBRE','OTTOBRE','NOVEMBRE','DICEMBRE'];
+  document.getElementById('data-oggi').textContent =
+    `TRASMISSIONE ${giorni[d.getDay()]} ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()} · FREQUENZA 432.7 MHz`;
+})();
+
+// Stato
+let archivioGlobale = [];
+let indiceAttivo = 0;
+let categoriaAttiva = 'tutte';
+
+// Tab
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('attivo'));
+    this.classList.add('attivo');
+    categoriaAttiva = this.dataset.cat;
+    filtraPost();
+  });
+});
+
+function filtraPost() {
+  document.querySelectorAll('.post-card').forEach(card => {
+    card.style.display =
+      (categoriaAttiva === 'tutte' || card.dataset.slug === categoriaAttiva) ? '' : 'none';
+  });
+}
+
+// Selettore data
+const selettore = document.getElementById('selettore-data');
+const btnPrec = document.getElementById('btn-prec');
+const btnSucc = document.getElementById('btn-succ');
+
+selettore.addEventListener('change', function() {
+  indiceAttivo = parseInt(this.value);
+  renderEdizione();
+});
+
+btnPrec.addEventListener('click', function() {
+  if (indiceAttivo < archivioGlobale.length - 1) {
+    indiceAttivo++;
+    selettore.value = indiceAttivo;
+    renderEdizione();
+  }
+});
+
+btnSucc.addEventListener('click', function() {
+  if (indiceAttivo > 0) {
+    indiceAttivo--;
+    selettore.value = indiceAttivo;
+    renderEdizione();
+  }
+});
+
+function aggiornaNav() {
+  btnPrec.disabled = indiceAttivo >= archivioGlobale.length - 1;
+  btnSucc.disabled = indiceAttivo <= 0;
+}
+
+function renderPost(p) {
+  const slug = slugCategoria(p.categoria);
+  return `
+    <div class="post-card ${slug}" data-slug="${slug}">
+      <div class="categoria-label ${slug}">${esc(p.categoria || '')}</div>
+      <div class="post-titolo">${esc(p.titolo || '')}</div>
+      <div class="post-testo">${esc(p.post_sito || '')}</div>
+      <div class="post-footer">
+        <button class="btn-copia" data-testo="${esc(p.post_x || p.post_sito || '')}">[ COPIA PER X ]</button>
+      </div>
+    </div>`;
+}
+
+function renderEdizione() {
+  const contenuto = document.getElementById('contenuto');
+  const ed = archivioGlobale[indiceAttivo];
+  if (!ed) return;
+
+  const isOggi = indiceAttivo === 0;
+  contenuto.innerHTML = `
+    <div class="edizione">
+      <div class="edizione-header">
+        <span class="edizione-data">// DOSSIER ${esc(formatData(ed.data)).toUpperCase()} //</span>
+        ${isOggi ? '<span class="edizione-label">[ ULTIMA TRASMISSIONE ]</span>' : ''}
+      </div>
+      ${(ed.post || []).map(p => renderPost(p)).join('')}
+    </div>`;
+
+  document.querySelectorAll('.btn-copia').forEach(btn => {
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(this.dataset.testo).then(() => {
+        const orig = this.textContent;
+        this.textContent = '[ COPIATO ✓ ]';
+        this.classList.add('copiato');
+        setTimeout(() => { this.textContent = orig; this.classList.remove('copiato'); }, 2000);
+      });
+    });
+  });
+
+  filtraPost();
+  aggiornaNav();
+}
+
+async function caricaArchivio() {
+  const contenuto = document.getElementById('contenuto');
+  try {
+    const r = await fetch('posts.json?t=' + Date.now());
+    const archivio = await r.json();
+
+    if (!archivio.edizioni || archivio.edizioni.length === 0) {
+      contenuto.innerHTML = '<p style="text-align:center;color:#2a5a2a;padding:3rem;font-family:monospace">// NESSUN DOSSIER DISPONIBILE — TRASMISSIONE IN ATTESA //</p>';
+      return;
+    }
+
+    archivioGlobale = archivio.edizioni;
+
+    if (archivio.ultimo_aggiornamento) {
+      const d = new Date(archivio.ultimo_aggiornamento);
+      document.getElementById('data-aggiornamento').textContent =
+        'ULTIMA TRASMISSIONE: ' + d.toLocaleString('it-IT');
+    }
+
+    selettore.innerHTML = archivioGlobale.map((ed, i) => {
+      const label = i === 0 ? `${ed.data} (ultima)` : ed.data;
+      return `<option value="${i}">${label}</option>`;
+    }).join('');
+
+    indiceAttivo = 0;
+    renderEdizione();
+
+  } catch(e) {
+    contenuto.innerHTML = '<p style="text-align:center;color:#c0392b;padding:3rem;font-family:monospace">// TRASMISSIONE INTERROTTA — INTERFERENZA RILEVATA //</p>';
+  }
+}
+
+caricaArchivio();
+</script>
+</body>
+</html>
