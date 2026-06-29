@@ -16,7 +16,6 @@
       min-height: 100vh;
     }
 
-    /* ── DISCLAIMER BANNER ── */
     .disclaimer-banner {
       background: #c0392b;
       color: white;
@@ -28,14 +27,12 @@
       letter-spacing: 0.05em;
     }
 
-    /* ── HEADER ── */
     header {
       background: #0d1a0d;
       color: #7fff7f;
       text-align: center;
       padding: 2rem 1rem 1.5rem;
       border-bottom: 2px solid #2a4a2a;
-      position: relative;
     }
 
     header::before {
@@ -84,15 +81,13 @@
 
     .nessuna-notizia {
       font-family: 'Share Tech Mono', monospace;
-      font-size: 0.65rem;
+      font-size: 0.62rem;
       color: #2a5a2a;
       margin-top: 0.5rem;
       letter-spacing: 0.08em;
     }
 
-    nav {
-      margin-top: 1rem;
-    }
+    nav { margin-top: 1rem; }
 
     nav a {
       color: #4a8a4a;
@@ -199,7 +194,7 @@
 
     /* ── MAIN ── */
     main {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
       padding: 2rem 1rem;
     }
@@ -208,7 +203,7 @@
 
     .edizione-header {
       border-bottom: 1px solid #1a3a1a;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
       padding-bottom: 0.4rem;
       display: flex;
       align-items: baseline;
@@ -226,12 +221,44 @@
       font-family: 'Share Tech Mono', monospace;
       font-size: 0.65rem;
       color: #2a5a2a;
-      letter-spacing: 0.1em;
     }
 
-    /* ── POST CARD ── */
+    /* ── DOSSIER CARD ── */
+    .post-card {
+      background: #0a120a;
+      border: 1px solid #1a3a1a;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    /* Timbro RISERVATO */
+    .post-card::after {
+      content: 'RISERVATO';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: #c0392b;
+      border: 1px solid #c0392b;
+      padding: 0.1rem 0.4rem;
+      opacity: 0.6;
+      transform: rotate(12deg);
+    }
+
+    /* ── RIGA CLASSIFICAZIONE ── */
+    .card-header {
+      background: #0d1a0d;
+      border-bottom: 1px solid #1a3a1a;
+      padding: 0.6rem 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
     .categoria-label {
-      display: inline-block;
       font-family: 'Share Tech Mono', monospace;
       font-size: 0.62rem;
       text-transform: uppercase;
@@ -239,7 +266,6 @@
       color: #0a0a0a;
       background: #7fff7f;
       padding: 0.15rem 0.5rem;
-      margin-bottom: 0.7rem;
     }
 
     .categoria-label.cosmici    { background: #7f7fff; }
@@ -248,57 +274,126 @@
     .categoria-label.sportivi   { background: #7fffff; color: #001a1a; }
     .categoria-label.tecnologici{ background: #7fff7f; }
 
-    .post-card {
-      background: #0d150d;
-      border: 1px solid #1a3a1a;
-      border-left: 3px solid #7fff7f;
-      padding: 1.2rem 1.4rem;
-      margin-bottom: 1.4rem;
-      position: relative;
-    }
-
-    .post-card::before {
-      content: '▌DOSSIER RISERVATO▐';
-      display: block;
+    .codice-dossier {
       font-family: 'Share Tech Mono', monospace;
-      font-size: 0.55rem;
-      color: #1a3a1a;
-      letter-spacing: 0.2em;
-      margin-bottom: 0.6rem;
+      font-size: 0.75rem;
+      color: #7fff7f;
+      letter-spacing: 0.1em;
     }
 
-    .post-card.cosmici    { border-left-color: #7f7fff; }
-    .post-card.mondiali   { border-left-color: #ff7f7f; }
-    .post-card.finanziari { border-left-color: #ffdf7f; }
-    .post-card.sportivi   { border-left-color: #7fffff; }
-    .post-card.tecnologici{ border-left-color: #7fff7f; }
-
-    .post-titolo {
-      font-size: 1.05rem;
-      font-weight: bold;
-      margin-bottom: 0.7rem;
-      line-height: 1.4;
-      color: #c8d8b0;
+    /* ── SEZIONI ── */
+    .sezione {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      border-bottom: 1px solid #0f1f0f;
     }
 
-    .post-testo {
+    .sezione:last-child { border-bottom: none; }
+
+    .sezione-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2a5a2a;
+      background: #080f08;
+      padding: 0.8rem 0.8rem;
+      border-right: 1px solid #1a3a1a;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .sezione-contenuto {
+      padding: 0.8rem 1.2rem;
       font-size: 0.9rem;
       line-height: 1.8;
-      margin-bottom: 0.8rem;
       color: #8aaa8a;
     }
 
-    .post-footer {
+    .sezione-contenuto.titolo {
+      font-size: 1.05rem;
+      color: #c8d8b0;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    .sezione-contenuto.avvertimento {
+      color: #ffbf7f;
+      font-style: italic;
+    }
+
+    .sezione-contenuto.disclaimer {
+      color: #ff7f7f;
+      font-size: 0.8rem;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ── VERSIONE PRIMORDIALE ── */
+    .primordiale-toggle {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2a5a2a;
+      background: #080f08;
+      padding: 0.5rem 1.2rem;
+      border-top: 1px solid #1a3a1a;
+      border-bottom: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .primordiale-toggle:hover { color: #4a8a4a; }
+
+    .primordiale-contenuto {
+      display: none;
+      padding: 1rem 1.2rem;
+      background: #060e06;
+      border-top: 1px solid #0f1f0f;
+    }
+
+    .primordiale-contenuto.aperto { display: block; }
+
+    .testo-antico {
+      font-size: 1.4rem;
+      line-height: 2;
+      color: #2a6a2a;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.8rem;
+      word-break: break-all;
+    }
+
+    .testo-antico.egizio {
+      color: #6a5a2a;
+      font-size: 1.2rem;
+    }
+
+    .antico-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.55rem;
+      color: #1a3a1a;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.3rem;
+      text-transform: uppercase;
+    }
+
+    /* ── FOOTER CARD ── */
+    .card-footer {
+      background: #080f08;
+      border-top: 1px solid #1a3a1a;
+      padding: 0.5rem 1.2rem;
       display: flex;
       justify-content: flex-end;
-      border-top: 1px solid #1a3a1a;
-      padding-top: 0.6rem;
-      margin-top: 0.4rem;
     }
 
     .btn-copia {
       font-family: 'Share Tech Mono', monospace;
-      font-size: 0.68rem;
+      font-size: 0.65rem;
       background: #0d1a0d;
       color: #4a8a4a;
       border: 1px solid #2a4a2a;
@@ -320,7 +415,6 @@
       letter-spacing: 0.1em;
     }
 
-    /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 2rem;
@@ -334,6 +428,11 @@
 
     footer a { color: #2a5a2a; text-decoration: none; }
     footer a:hover { color: #7fff7f; }
+
+    @media (max-width: 600px) {
+      .sezione { grid-template-columns: 90px 1fr; }
+      .sezione-label { font-size: 0.52rem; padding: 0.6rem 0.4rem; }
+    }
   </style>
 </head>
 <body>
@@ -381,10 +480,41 @@
 <footer>
   IL COMPLOTTISTA — ARTIFICIOSO · TUTTI I SEGRETI SATIRICAMENTE RISERVATI<br>
   TUTTI I COMPLOTTI SONO INVENTATI · SATIRA GENERATA DA INTELLIGENZA ARTIFICIALE<br>
-  DOSSIER PRODOTTI OGNI MATTINA DAL SISTEMA · <a href="chi-siamo.html">CHI SIAMO · IL PROF. VEX'LAAR</a> · <a href="feed.xml">RSS</a>
+  DOSSIER PRODOTTI OGNI MATTINA · <a href="chi-siamo.html">CHI SIAMO · IL PROF. VEX'LAAR</a> · <a href="feed.xml">RSS</a>
 </footer>
 
 <script>
+// ── Pseudo-scritture antiche ──────────────────────────────────────
+const CUNEIFORME = [
+  '𒀭','𒀮','𒀯','𒀰','𒀱','𒀲','𒀳','𒀴','𒀵','𒀶','𒀷','𒀸','𒀹','𒀺','𒀻',
+  '𒁀','𒁁','𒁂','𒁃','𒁄','𒁅','𒁆','𒁇','𒁈','𒁉','𒁊','𒁋','𒁌','𒁍','𒁎',
+  '𒂀','𒂁','𒂂','𒂃','𒂄','𒂅','𒂆','𒂇','𒂈','𒂉','𒂊','𒂋','𒂌','𒂍','𒂎',
+  '𒃀','𒃁','𒃂','𒃃','𒃄','𒃅','𒃆','𒃇','𒃈','𒃉','𒃊','𒃋','𒃌','𒃍','𒃎',
+];
+
+const EGIZIO = [
+  '𓀀','𓀁','𓀂','𓀃','𓀄','𓀅','𓀆','𓀇','𓀈','𓀉','𓀊','𓀋','𓀌','𓀍','𓀎',
+  '𓁀','𓁁','𓁂','𓁃','𓁄','𓁅','𓁆','𓁇','𓁈','𓁉','𓁊','𓁋','𓁌','𓁍','𓁎',
+  '𓂀','𓂁','𓂂','𓂃','𓂄','𓂅','𓂆','𓂇','𓂈','𓂉','𓂊','𓂋','𓂌','𓂍','𓂎',
+  '𓃀','𓃁','𓃂','𓃃','𓃄','𓃅','𓃆','𓃇','𓃈','𓃉','𓃊','𓃋','𓃌','𓃍','𓃎',
+];
+
+function pseudoAntico(testo, alfabeto, lunghezza) {
+  // Usa il testo come seed deterministico
+  let seed = 0;
+  for (let i = 0; i < testo.length; i++) seed = (seed * 31 + testo.charCodeAt(i)) & 0xffffffff;
+  let result = '';
+  for (let i = 0; i < lunghezza; i++) {
+    seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+    const idx = Math.abs(seed) % alfabeto.length;
+    result += alfabeto[idx];
+    if ((i + 1) % 8 === 0) result += ' ';
+    if ((i + 1) % 32 === 0) result += '\n';
+  }
+  return result;
+}
+
+// ── Utility ──────────────────────────────────────────────────────
 function esc(s) {
   return String(s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;')
@@ -412,7 +542,7 @@ function slugCategoria(cat) {
   return '';
 }
 
-// Data header
+// ── Data header ──────────────────────────────────────────────────
 (function() {
   const d = new Date();
   const giorni = ['DOMENICA','LUNEDÌ','MARTEDÌ','MERCOLEDÌ','GIOVEDÌ','VENERDÌ','SABATO'];
@@ -422,12 +552,12 @@ function slugCategoria(cat) {
     `TRASMISSIONE ${giorni[d.getDay()]} ${d.getDate()} ${mesi[d.getMonth()]} ${d.getFullYear()} · FREQUENZA 432.7 MHz`;
 })();
 
-// Stato
+// ── Stato ────────────────────────────────────────────────────────
 let archivioGlobale = [];
 let indiceAttivo = 0;
 let categoriaAttiva = 'tutte';
 
-// Tab
+// ── Tab ──────────────────────────────────────────────────────────
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('attivo'));
@@ -444,7 +574,7 @@ function filtraPost() {
   });
 }
 
-// Selettore data
+// ── Selettore data ───────────────────────────────────────────────
 const selettore = document.getElementById('selettore-data');
 const btnPrec = document.getElementById('btn-prec');
 const btnSucc = document.getElementById('btn-succ');
@@ -475,15 +605,72 @@ function aggiornaNav() {
   btnSucc.disabled = indiceAttivo <= 0;
 }
 
+// ── Render post ──────────────────────────────────────────────────
+let toggleCounter = 0;
+
 function renderPost(p) {
   const slug = slugCategoria(p.categoria);
+  const codice = p.codice || '?-000';
+  const titolo = p.titolo || '';
+  const testo = p.testo || p.post_sito || '';
+  const avvertimento = p.avvertimento || '';
+  const postX = p.post_x || p.post_sito || '';
+
+  const toggleId = `prim-${toggleCounter++}`;
+
+  // Genera pseudo-scritture deterministicamente dal titolo
+  const cunei = pseudoAntico(titolo + 'cuneiforme', CUNEIFORME, 64);
+  const egizi = pseudoAntico(titolo + 'egizio', EGIZIO, 48);
+
   return `
-    <div class="post-card ${slug}" data-slug="${slug}">
-      <div class="categoria-label ${slug}">${esc(p.categoria || '')}</div>
-      <div class="post-titolo">${esc(p.titolo || '')}</div>
-      <div class="post-testo">${esc(p.post_sito || '')}</div>
-      <div class="post-footer">
-        <button class="btn-copia" data-testo="${esc(p.post_x || p.post_sito || '')}">[ COPIA PER X ]</button>
+    <div class="post-card" data-slug="${slug}">
+      <div class="card-header">
+        <div class="categoria-label ${slug}">${esc(p.categoria || '')}</div>
+        <div class="codice-dossier">DOSSIER ${esc(codice)}</div>
+      </div>
+
+      <div class="sezione">
+        <div class="sezione-label">[ OGGETTO ]</div>
+        <div class="sezione-contenuto titolo">${esc(titolo)}</div>
+      </div>
+
+      <div class="sezione">
+        <div class="sezione-label">[ CLASSIFICAZIONE ]</div>
+        <div class="sezione-contenuto" style="font-family:'Share Tech Mono',monospace;font-size:0.7rem;color:#4a8a4a;letter-spacing:0.1em;">RISERVATO — LIVELLO VEX'LAAR — ACCESSO NEGATO AL PUBBLICO NON CONSAPEVOLE</div>
+      </div>
+
+      <div class="sezione">
+        <div class="sezione-label">[ DOSSIER ]</div>
+        <div class="sezione-contenuto">${esc(testo)}</div>
+      </div>
+
+      ${avvertimento ? `
+      <div class="sezione">
+        <div class="sezione-label">[ AVVERTIMENTO ]</div>
+        <div class="sezione-contenuto avvertimento">⚠ ${esc(avvertimento)}</div>
+      </div>` : ''}
+
+      <div class="sezione">
+        <div class="sezione-label">[ NOTA ED. ]</div>
+        <div class="sezione-contenuto disclaimer">⚠️ Questo dossier è interamente satirico e inventato. Il Complottista — Artificioso è satira generata da intelligenza artificiale. Nessuna teoria qui pubblicata corrisponde alla realtà.</div>
+      </div>
+
+      <button class="primordiale-toggle" onclick="this.nextElementSibling.classList.toggle('aperto');this.querySelector('.toggle-arrow').textContent=this.nextElementSibling.classList.contains('aperto')?'▼':'▶'">
+        <span class="toggle-arrow">▶</span>
+        [ VERSIONE PRIMORDIALE — TRASMISSIONE ORIGINALE IN LINGUE ANTICHE ]
+      </button>
+      <div class="primordiale-contenuto" id="${toggleId}">
+        <div class="antico-label">// CUNEIFORME SUMERICO — TRASCRIZIONE SEZIONE Z VATICANA //</div>
+        <div class="testo-antico">${cunei}</div>
+        <div class="antico-label" style="margin-top:1rem">// GEROGLIFICO EGIZIO — FONTE: PAPIRO VEX'LAAR-BERMÚDEZ, FALDONE 7 //</div>
+        <div class="testo-antico egizio">${egizi}</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#1a3a1a;margin-top:0.8rem;letter-spacing:0.1em;">
+          NOTA: La corrispondenza tra il testo italiano e le versioni primordiali è documentata nel Rapporto Vex'laar-Bermúdez, archivio personale, faldone 23, allegato Linguistico-Α. La traduzione inversa non è consigliata senza adeguata protezione cranica.
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button class="btn-copia" data-testo="${esc(postX)}">[ COPIA PER X ]</button>
       </div>
     </div>`;
 }
@@ -493,11 +680,13 @@ function renderEdizione() {
   const ed = archivioGlobale[indiceAttivo];
   if (!ed) return;
 
+  toggleCounter = 0;
   const isOggi = indiceAttivo === 0;
+
   contenuto.innerHTML = `
     <div class="edizione">
       <div class="edizione-header">
-        <span class="edizione-data">// DOSSIER ${esc(formatData(ed.data)).toUpperCase()} //</span>
+        <span class="edizione-data">// ARCHIVIO ${esc(formatData(ed.data)).toUpperCase()} //</span>
         ${isOggi ? '<span class="edizione-label">[ ULTIMA TRASMISSIONE ]</span>' : ''}
       </div>
       ${(ed.post || []).map(p => renderPost(p)).join('')}
@@ -518,6 +707,7 @@ function renderEdizione() {
   aggiornaNav();
 }
 
+// ── Carica archivio ──────────────────────────────────────────────
 async function caricaArchivio() {
   const contenuto = document.getElementById('contenuto');
   try {
@@ -525,7 +715,7 @@ async function caricaArchivio() {
     const archivio = await r.json();
 
     if (!archivio.edizioni || archivio.edizioni.length === 0) {
-      contenuto.innerHTML = '<p style="text-align:center;color:#2a5a2a;padding:3rem;font-family:monospace">// NESSUN DOSSIER DISPONIBILE — TRASMISSIONE IN ATTESA //</p>';
+      contenuto.innerHTML = '<p style="text-align:center;color:#2a5a2a;padding:3rem;font-family:monospace">// NESSUN DOSSIER — TRASMISSIONE IN ATTESA //</p>';
       return;
     }
 

@@ -13,11 +13,11 @@ import anthropic
 
 # ── Configurazione ──────────────────────────────────────────────
 CATEGORIE = [
-    "Complotti Cosmici",
-    "Complotti Mondiali",
-    "Complotti Finanziari",
-    "Complotti Sportivi",
-    "Complotti Tecnologici",
+    {"nome": "Complotti Cosmici",     "codice": "C"},
+    {"nome": "Complotti Mondiali",    "codice": "M"},
+    {"nome": "Complotti Finanziari",  "codice": "F"},
+    {"nome": "Complotti Sportivi",    "codice": "S"},
+    {"nome": "Complotti Tecnologici", "codice": "T"},
 ]
 MAX_ARCHIVIO_GIORNI = 30
 POSTS_FILE = "docs/posts.json"
@@ -44,34 +44,39 @@ REGOLE DI STILE:
   es. "Rapporto Vex'laar-Bermúdez, archivio personale, faldone 23"
   es. "Comunicazione intercettata, frequenza 432.7 MHz, ore 03:14 del 14 marzo 1989"
 - Collega sempre almeno tre elementi apparentemente non correlati
-- Concludi ogni dossier con un avvertimento al lettore, sempre diverso
-- Non nominare mai persone reali come complici — solo entità, consorzi, ordini, frequenze
 - I complotti devono essere inequivocabilmente assurdi e fantasiosi
+- Non nominare mai persone reali come complici — solo entità, consorzi, ordini, frequenze
 - Non fare mai riferimento a minoranze etniche, religiose o sessuali come responsabili
 
-DISCLAIMER OBBLIGATORIO: alla fine di ogni post_sito aggiungi sempre questa riga esatta:
-"⚠️ NOTA DEL DIRETTORE EDITORIALE: Questo dossier è interamente satirico e inventato. Il Complottista — Artificioso è satira generata da intelligenza artificiale. Nessuna teoria qui pubblicata corrisponde alla realtà."
+STRUTTURA OBBLIGATORIA DI OGNI DOSSIER:
+Ogni dossier deve avere questi campi separati:
+1. "titolo": titolo del dossier (senza codice numerico, quello lo aggiungiamo noi)
+2. "testo": il corpo principale del dossier, 4-6 frasi, con fonti inventate e collegamenti assurdi
+3. "avvertimento": una frase di avvertimento al lettore, sempre diversa e sempre inquietante
+4. "post_x": versione max 280 caratteri per X, tono oracolare e urgente
 """
 
 
 def genera_post() -> dict:
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    categorie_str = "\n".join(f"- {c}" for c in CATEGORIE)
+
+    # Calcola numero progressivo del giorno (giorni dall'inizio del 2025)
+    oggi = datetime.now()
+    giorno_anno = oggi.timetuple().tm_yday + (oggi.year - 2025) * 365
+
+    categorie_str = "\n".join(
+        f"- {c['nome']} (codice: {c['codice']})" for c in CATEGORIE
+    )
 
     prompt = f"""Genera un dossier rivelatorio per ognuna di queste categorie:
 {categorie_str}
 
-Ogni dossier deve:
-- Rivelare un complotto completamente inventato e assurdo, mai pericoloso
-- Collegare almeno tre elementi non correlati con logica paranoica impeccabile
-- Citare fonti inventate con precisione millimetrica
-- Concludere con un avvertimento al lettore
-- Essere scritto in tono serissimo, mai ironico consapevolmente
+Ogni dossier deve rivelare un complotto completamente inventato e assurdo,
+collegare almeno tre elementi non correlati con logica paranoica impeccabile,
+citare fonti inventate con precisione millimetrica, e concludere con un avvertimento.
 
-Per ogni categoria genera DUE versioni:
-- post_x: versione breve max 280 caratteri per X, tono oracolare e urgente
-- post_sito: versione lunga 4-6 frasi, con fonti inventate, collegamenti assurdi,
-  avvertimento finale, e il disclaimer obbligatorio
+Il numero progressivo per oggi è {giorno_anno} — usalo come base per i codici dossier
+(es. C-{giorno_anno:03d}, M-{giorno_anno:03d}, ecc.)
 
 Rispondi SOLO con un oggetto JSON valido, senza markdown, senza backtick.
 Formato esatto:
@@ -81,9 +86,11 @@ Formato esatto:
   "post": [
     {{
       "categoria": "nome della categoria",
-      "titolo": "titolo del dossier rivelatorio",
-      "post_x": "testo breve max 280 caratteri",
-      "post_sito": "testo lungo con fonti, collegamenti, avvertimento e disclaimer"
+      "codice": "X-{giorno_anno:03d}",
+      "titolo": "titolo del dossier",
+      "testo": "corpo principale 4-6 frasi con fonti inventate e collegamenti assurdi",
+      "avvertimento": "frase di avvertimento al lettore",
+      "post_x": "testo breve max 280 caratteri per X"
     }}
   ]
 }}"""
@@ -112,7 +119,7 @@ Formato esatto:
         pass
 
     # Strategia 2: sanifica apostrofi tipografici
-    raw2 = raw.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '\"').replace("\u201d", '\"')
+    raw2 = raw.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
     try:
         return json.loads(raw2)
     except json.JSONDecodeError:
@@ -176,17 +183,18 @@ def genera_rss(archivio: dict) -> None:
     for ed in archivio.get("edizioni", [])[:10]:
         data = ed.get("data", "")
         for p in ed.get("post", []):
+            codice = xml_esc(p.get("codice", ""))
             titolo = xml_esc(p.get("titolo", ""))
             categoria = xml_esc(p.get("categoria", ""))
-            testo = xml_esc(p.get("post_sito") or "")
+            testo = xml_esc(p.get("testo", "") + " — " + p.get("avvertimento", ""))
             pub_date = data_rss(data)
 
             items.append(f"""    <item>
-      <title>[{categoria}] {titolo}</title>
+      <title>DOSSIER {codice}: {titolo}</title>
       <link>{SITE_URL}</link>
       <description>{testo}</description>
       <pubDate>{pub_date}</pubDate>
-      <guid isPermaLink="false">{xml_esc(data)}-{xml_esc(p.get('categoria',''))}-{xml_esc(titolo[:30])}</guid>
+      <guid isPermaLink="false">{xml_esc(data)}-{xml_esc(codice)}</guid>
       <category>{categoria}</category>
     </item>""")
 
