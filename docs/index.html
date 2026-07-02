@@ -429,6 +429,23 @@
     footer a { color: #2a5a2a; text-decoration: none; }
     footer a:hover { color: #7fff7f; }
 
+    .badge-quasi-vero {
+      display: inline-block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: #ffdf7f;
+      border: 1px solid #ffdf7f;
+      padding: 0.1rem 0.4rem;
+      margin-left: 0.5rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
     @media (max-width: 600px) {
       .sezione { grid-template-columns: 90px 1fr; }
       .sezione-label { font-size: 0.52rem; padding: 0.6rem 0.4rem; }
@@ -617,6 +634,7 @@ function renderPost(p) {
   const postX = p.post_x || p.post_sito || '';
 
   const toggleId = `prim-${toggleCounter++}`;
+  const quasiVero = p.quasi_vero ? '<span class="badge-quasi-vero">⚡ NOTIZIA REALE / CORRELAZIONE INVENTATA</span>' : '';
 
   // Genera pseudo-scritture deterministicamente dal titolo
   const cunei = pseudoAntico(titolo + 'cuneiforme', CUNEIFORME, 64);
@@ -626,7 +644,7 @@ function renderPost(p) {
     <div class="post-card" data-slug="${slug}">
       <div class="card-header">
         <div class="categoria-label ${slug}">${esc(p.categoria || '')}</div>
-        <div class="codice-dossier">DOSSIER ${esc(codice)}</div>
+        <div class="codice-dossier">DOSSIER ${esc(codice)}${quasiVero}</div>
       </div>
 
       <div class="sezione">
