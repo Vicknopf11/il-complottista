@@ -2,7 +2,7 @@ name: Genera Dossier
 
 on:
   schedule:
-    - cron: '30 7 * * *'   # 09:30 ora italiana — mezz'ora dopo Il Corrispondente
+    - cron: '27 7 * * *'   # 09:30 ora italiana — mezz'ora dopo Il Corrispondente
   workflow_dispatch:
 
 jobs:
