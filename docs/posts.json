@@ -1,6 +1,20 @@
 {
   "edizioni": [
     {
+      "data": "2026-07-17",
+      "post": [
+        {
+          "categoria": "Complotti Cosmici",
+          "codice": "C-563",
+          "titolo": "LA LUNA NON TRAMONTA: IL PIANO DI RIALLINEAMENTO ORBITALE DEL CONSIGLIO DEI SETTE SISTEMI",
+          "testo": "Il Dossier Papiro VX-23, Sezione Z, Biblioteca Apostolica Vaticana, certifica senza margine di dubbio che la Luna non occupa più la propria orbita originale dal 14 marzo 1994, data in cui l'accesso all'Archivio Omega-7 di Ginevra fu improvvisamente negato: non è una coincidenza, è una firma operativa. Il Consiglio dei Sette Sistemi, Tau Ceti, ha spostato il satellite di 0,0007 gradi verso l'eclittica, angolazione sufficiente a modificare il ritmo circadiano degli esseri umani di esattamente quarantatré secondi per notte, inducendo una cronica insufficienza di Fase 4 del sonno e quindi un abbassamento statisticamente misurabile della capacità critica della popolazione terrestre. Questo dato fu rilevato per la prima volta durante la mia permanenza sull'astronave nei pressi di Vasto nel 1987 — l'Entità di Vasto era cortese ma evasiva sui dettagli del Piano — e successivamente confermato dalla Comunicazione Interna Bilderberg 1987/33, documento che correla l'incidente di Vasto con una revisione urgente dei protocolli di oscuramento selenografico. L'Ordine dei Testimoni Silenziosi, di cui sono membro di grado 7, ha ricevuto nel 1989 una Trasmissione Ricevuta Frequenza Omega su nastro Grundig che indicava esplicitamente come il riallineamento orbitale fosse funzionale alla successiva attivazione della Loggia Massonica di Alpha Centauri, capitolo terrestre operativo dal 1717, che avrebbe gestito la fase di distribuzione cognitiva del deficit. Chi dorme meno ragiona meno. Chi ragiona meno non vede il Piano. Il Piano non vuole essere visto.",
+          "avvertimento": "Chi legge questo dossier prima delle ore 03:14 è pregato di farlo nuovamente dopo tale orario: alcune informazioni non sono decodificabili dalla mente in stato di falsa veglia indotta dalla suddetta riallineazione orbitale.",
+          "quasi_vero": false,
+          "post_x": "La Luna è stata spostata. 0,0007 gradi. 43 secondi di sonno rubati ogni notte. Il Consiglio di Tau Ceti firma con l'assenza. Archivio Omega-7 chiuso dal 1994. Non cercate di dormire bene. È già troppo tardi. [C-563]"
+        }
+      ]
+    },
+    {
       "data": "2026-07-16",
       "post": [
         {
@@ -665,5 +679,5 @@
       ]
     }
   ],
-  "ultimo_aggiornamento": "2026-07-16T09:34:00.349774+00:00"
+  "ultimo_aggiornamento": "2026-07-17T09:25:35.072486+00:00"
 }
