@@ -25,8 +25,8 @@ FEED_FILE = "docs/feed.xml"
 SITE_URL = "https://vicknopf11.github.io/il-complottista"
 # ────────────────────────────────────────────────────────────────
 
-# Giorno della settimana in cui includere una notizia "quasi vera"
-GIORNO_QUASI_VERO = 2  # mercoledì (0=lunedì, 6=domenica)
+# Giorno della settimana in cui includere una correlazione spuria storica
+GIORNO_CORRELAZIONE_SPURIA = 2  # mercoledì (0=lunedì, 6=domenica)
 
 FONTI_REPERTORIO = """
 SERVIZI SEGRETI TERRESTRI (usa con rotazione, non sempre SISMI):
@@ -130,6 +130,31 @@ REGOLE DI STILE:
 - Non nominare mai persone reali come complici — solo entità, consorzi, ordini, frequenze
 - Non fare mai riferimento a minoranze etniche, religiose o sessuali come responsabili
 
+━━━ SECONDA MISSIONE: RICONOSCERE LA PROPAGANDA ━━━
+
+Oltre a ridicolizzare il meccanismo del pensiero complottista, Il Complottista
+ha una seconda missione: rendere il lettore più attento ai meccanismi retorici
+della propaganda e della manipolazione informativa, sempre più diffusi nell'era
+dei social media.
+
+In AL MASSIMO UNO dei cinque dossier di ogni edizione — mai di più, e solo
+quando calza naturalmente con il tema — puoi far esagerare al Prof. Vex'laar,
+con lo stesso tono serissimo e paranoico del personaggio, un pattern retorico
+realmente esistente nella propaganda e nelle operazioni di influenza: urgenza
+artificiale ("agisci ORA prima che sia troppo tardi"), nemico comune esterno,
+ripetizione ossessiva dello stesso slogan, appello identitario ("loro contro
+noi"), false credenziali di autorità ("fonti che non posso rivelare").
+
+Non è un'istruzione da applicare ogni giorno: se nessuno dei cinque dossier si
+presta naturalmente, non forzarla. Quando la usi, indicalo nel campo dedicato
+del dossier interessato (vedi struttura JSON).
+
+REGOLA FERREA: si mostra il PATTERN in modo riconoscibile ed esagerato per farlo
+notare — non si insegna MAI una tecnica utilizzabile nella realtà. Il dossier
+deve restare palesemente ridicolo nella sua forma; se un lettore potesse
+copiare la struttura del dossier e usarla altrove come propaganda vera, il
+dossier ha fallito il suo scopo ed è da riscrivere.
+
 REPERTORIO FONTI:
 {FONTI_REPERTORIO}
 
@@ -139,11 +164,13 @@ Ogni dossier deve avere:
 2. "testo": corpo principale 4-6 frasi con fonti variate e collegamenti assurdi
 3. "avvertimento": frase di avvertimento al lettore, sempre diversa
 4. "post_x": versione max 280 caratteri per X, tono oracolare
+5. "pattern_propaganda": nome del pattern retorico esagerato in questo dossier
+   (es. "urgenza artificiale", "nemico comune"), oppure null se non applicato
 """
 
 
-def is_mercoledi() -> bool:
-    return datetime.now().weekday() == GIORNO_QUASI_VERO
+def is_correlazione_spuria() -> bool:
+    return datetime.now().weekday() == GIORNO_CORRELAZIONE_SPURIA
 
 
 def genera_post() -> dict:
@@ -160,17 +187,43 @@ def genera_post() -> dict:
     )
 
     # Istruzione speciale per il mercoledì
-    istruzione_quasi_vero = ""
-    if is_mercoledi():
-        istruzione_quasi_vero = """
+    istruzione_correlazione_spuria = ""
+    if is_correlazione_spuria():
+        istruzione_correlazione_spuria = """
 ISTRUZIONE SPECIALE PER OGGI (MERCOLEDÌ):
-Per UNO dei cinque dossier (a tua scelta, categoria più adatta) includi un riferimento
-a una notizia reale di attualità come punto di partenza, ma sviluppa una correlazione
-completamente assurda e inventata. Regole ferree:
-- Nessun riferimento a persone private in modo che le possa mettere in cattiva luce
-- Se menzioni persone famose e potenti: solo ironia leggera, mai diffamatoria
-- La correlazione deve essere inequivocabilmente assurda
+Per UNO dei cinque dossier (a tua scelta, categoria più adatta) costruisci una
+"correlazione spuria" nello stile del sito Spurious Correlations di Tyler Vigen:
+collega DUE fatti o statistiche reali, verificabili, ma senza alcun nesso causale
+plausibile — e presentali con tono serissimo come se fossero una scoperta
+sconvolgente.
+
+Lo scopo è educativo quanto satirico: mostrare quanto sia facile scambiare
+correlazione per causazione, e quindi quanto sia facile costruire un "complotto"
+partendo da coincidenze innocue. Il bersaglio della satira è il MECCANISMO di
+pensiero complottista, non un evento o una persona specifica.
+
+Regole ferree sulla scelta dei fatti da collegare:
+- Usa dati, statistiche o eventi STORICI e GENERICI — non l'attualità della
+  settimana in corso. Esempi di buone fonti: dati economici o di consumo di
+  decenni passati, statistiche sportive storiche, fenomeni naturali documentati,
+  eventi di cronaca lontani nel tempo (più di 15-20 anni) e ormai privi di
+  soggetti coinvolti in vita pubblica attuale.
+- NESSUNA persona reale attualmente in carica, in attività, o comunque vivente
+  e pubblicamente attiva oggi. Se uno dei due fatti coinvolge necessariamente
+  una persona, questa deve essere una figura storica, non più in vita o non più
+  pubblicamente rilevante da almeno un ventennio.
+- MAI tragedie, lutti, stragi, incidenti mortali, violenze: anche a distanza di
+  decenni, questi temi restano fuori discussione per questo formato.
+- Se possibile, usa la ricerca web per verificare che i due fatti/statistiche
+  siano effettivamente reali e accurati — l'assurdità deve stare nella
+  correlazione inventata, non nell'invenzione dei dati di partenza.
+
+Regole sulla forma:
+- La correlazione deve restare inequivocabilmente assurda — mai plausibile
 - Aggiungi nel campo "quasi_vero": true per quel dossier
+- Nel campo "titolo" di quel dossier, anteponi sempre l'etichetta
+  "[CORRELAZIONE SPURIA: FATTI REALI, NESSO INVENTATO] " prima del titolo
+  vero e proprio.
 """
 
     prompt = f"""Genera un dossier rivelatorio per ognuna di queste categorie:
@@ -178,7 +231,7 @@ completamente assurda e inventata. Regole ferree:
 
 La data di oggi è {data_oggi}. Usa ESATTAMENTE questa data nel campo "data".
 
-{istruzione_quasi_vero}
+{istruzione_correlazione_spuria}
 
 Ogni dossier deve:
 - Rivelare un complotto completamente inventato e assurdo
@@ -199,6 +252,7 @@ Formato esatto:
       "testo": "corpo principale con fonti variate e collegamenti assurdi",
       "avvertimento": "frase di avvertimento al lettore",
       "quasi_vero": false,
+      "pattern_propaganda": null,
       "post_x": "testo breve max 280 caratteri per X"
     }}
   ]
@@ -209,7 +263,7 @@ Formato esatto:
         max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": prompt}],
-        tools=[{"type": "web_search_20250305", "name": "web_search"}] if is_mercoledi() else [],
+        tools=[{"type": "web_search_20250305", "name": "web_search"}] if is_correlazione_spuria() else [],
     )
 
     testo = "".join(
@@ -222,30 +276,57 @@ Formato esatto:
 
     raw = match.group()
 
+    parsed = None
     try:
-        return json.loads(raw)
+        parsed = json.loads(raw)
     except json.JSONDecodeError:
         pass
 
-    raw2 = raw.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
-    try:
-        return json.loads(raw2)
-    except json.JSONDecodeError:
-        pass
+    if parsed is None:
+        raw2 = raw.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+        try:
+            parsed = json.loads(raw2)
+        except json.JSONDecodeError:
+            pass
 
-    try:
-        posts = []
-        for block in re.finditer(r'\{[^{}]*"categoria"[^{}]*\}', raw, re.DOTALL):
-            try:
-                posts.append(json.loads(block.group()))
-            except Exception:
-                pass
-        if posts:
-            return {"data": data_oggi, "post": posts}
-    except Exception:
-        pass
+    if parsed is None:
+        try:
+            posts = []
+            for block in re.finditer(r'\{[^{}]*"categoria"[^{}]*\}', raw, re.DOTALL):
+                try:
+                    posts.append(json.loads(block.group()))
+                except Exception:
+                    pass
+            if posts:
+                parsed = {"data": data_oggi, "post": posts}
+        except Exception:
+            pass
 
-    raise ValueError(f"Impossibile parsare il JSON:\n{raw[:500]}")
+    if parsed is None:
+        raise ValueError(f"Impossibile parsare il JSON:\n{raw[:500]}")
+
+    return valida_pattern_propaganda(parsed)
+
+
+def valida_pattern_propaganda(edizione: dict) -> dict:
+    """Verifica che al massimo un dossier per edizione usi 'pattern_propaganda'.
+    Se il modello ne ha applicati di più (nonostante l'istruzione), tiene solo
+    il primo e azzera gli altri, loggando un avviso."""
+    post = edizione.get("post", [])
+    indici_con_pattern = [
+        i for i, p in enumerate(post) if p.get("pattern_propaganda")
+    ]
+
+    if len(indici_con_pattern) > 1:
+        print(
+            f"⚠️  Attenzione: {len(indici_con_pattern)} dossier avevano "
+            f"'pattern_propaganda' impostato (limite: 1 per edizione). "
+            f"Mantengo solo il primo, azzero gli altri."
+        )
+        for i in indici_con_pattern[1:]:
+            post[i]["pattern_propaganda"] = None
+
+    return edizione
 
 
 def aggiorna_archivio(nuova_edizione: dict) -> None:
