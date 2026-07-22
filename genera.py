@@ -29,6 +29,7 @@ SITE_URL = "https://vicknopf11.github.io/il-complottista"
 GIORNO_CORRELAZIONE_SPURIA = 2  # mercoledì (0=lunedì, 6=domenica)
 
 FONTI_REPERTORIO = """
+
 SERVIZI SEGRETI TERRESTRI (usa con rotazione, non sempre SISMI):
 - CIA-OMEGA/7734 — divisione Percezione Alterata, Langley
 - MI6-BLACKTHORN/23 — sezione Anomalie Cronologiche, Vauxhall Cross
@@ -50,6 +51,7 @@ ORGANIZZAZIONI OSCURE TERRESTRI:
 - Fondazione Papiro (gestisce biblioteche in 47 paesi)
 - Consorzio del Caffè Lungo
 - Istituto per la Sincronizzazione Selettiva
+- Fratellanza del Meridiano Immobile, sede operativa sotterranea, Lussemburgo, fondata 1887
 
 ORGANIZZAZIONI OSCURE GALATTICHE:
 - Consiglio dei Sette Sistemi, Tau Ceti
@@ -59,6 +61,7 @@ ORGANIZZAZIONI OSCURE GALATTICHE:
 - Loggia Massonica di Alpha Centauri (capitolo terrestre attivo dal 1717)
 - Ordine dei Cavalieri Templari degli Anelli di Saturno (gran maestro in orbita)
 - Entità di Vasto ("cortese ma evasiva sui dettagli del piano")
+- Sinodo Permanente degli Architetti di Proxima, stazione orbitale non catalogata, settore 7-Vermiglio
 
 RAPPORTI E ARCHIVI — VATICANO:
 - Dossier Papiro VX-23, Sezione Z, Biblioteca Apostolica Vaticana
@@ -66,24 +69,28 @@ RAPPORTI E ARCHIVI — VATICANO:
 - Codice Gesuitico Omega, Gallarate, 1969
 - Registro delle Entità Non Classificate, Vaticano, volume 7
 - Circolare Apostolica Riservata 003/1953
+- Memorandum Pergamena ΩΩ-41, Prefettura per la Gestione dell'Indicibile, Archivio Segreto, scaffale 9, 1952
 
 RAPPORTI E ARCHIVI — CITY OF LONDON:
 - Protocollo Lombard Street 7/B, Camera di Compensazione Occulta, 1913
 - Memorandum Threadneedle, Banca d'Inghilterra, divisione Frequenze Monetarie, 1971
 - Accordo della Città Quadrata, Guildhall, 1666
 - Registro delle Forme Geometriche Approvate, City Corporation
+- Circolare Threadneedle Nero/X, Comitato delle Decisioni Irrevocabili, seduta straordinaria, 4 novembre 1931, ore 3:17
 
 RAPPORTI E ARCHIVI — BILDERBERG:
 - Verbale Bilderberg 1954/OMEGA, sessione notturna non registrata
 - Allegato Bilderberg-7 (standardizzazione del beige)
 - Protocollo Oosterbeek, Hotel de Bilderberg, 1954
 - Comunicazione Interna Bilderberg 1987/33 (relativa all'incidente di Vasto)
+- Allegato riservato Bilderberg 1967/ARGO-14, pagine 88-103, distribuzione vietata oltre il Grado Sette
 
 RAPPORTI E ARCHIVI — WORLD ECONOMIC FORUM:
 - Rapporto Davos/Z-2001, sessione chiusa
 - Agenda Segreta WEF 2030
 - Circolare Davos 007/2020 (sincronizzazione globale dei termostati)
 - Nota Tecnica WEF-Frequenze (correlazione Davos-Trasmissione Omega)
+- Appendice Davos/NERO-2009, sessione pre-alba, partecipanti non a verbale, sala sotterranea C
 
 RAPPORTI E ARCHIVI — ALTRE ISTITUZIONI:
 - Atti del Convegno Segreto di Reykjavik, 1973
@@ -97,6 +104,7 @@ RAPPORTI E ARCHIVI — ALTRE ISTITUZIONI:
 - Dossier Massonico Alpha Centauri/Terra, loggia di Londra, 1717
 - Ordine Interno Templari Saturno/7, decrittato 1973
 - Comunicazione intercettata frequenza 432.7 MHz, ore 03:14 del 14 marzo 1989
+- Resoconto cifrato del Colloquio Permanente di Baden-Baden, tavola rotonda non ufficiale, ottobre 1961, protocollo KK/44
 
 RAPPORTI PERSONALI DEL PROF. (usa con parsimonia, mai due volte di fila):
 - Rapporto Vex'laar-Bermúdez, faldone [N], allegato [lettera]
@@ -106,6 +114,11 @@ RAPPORTI PERSONALI DEL PROF. (usa con parsimonia, mai due volte di fila):
 - Trasmissione Ricevuta Frequenza Omega (nastro Grundig)
 - Dossier Negev-11 (consultato durante corso Mossad 1976)
 - Testimonianza Anonima Fonte Protetta Livello Vex'laar
+
+RAPPORTI E ARCHIVI — ISTITUZIONI SCIENTIFICHE OMBRA:
+- Bollettino Interno CERN-OSCURO/∆∆9, Divisione Fenomeni Non Divulgabili, Ginevra, circolazione ristretta, 1998
+- Archivio Parallelo dell'Agenzia Internazionale per la Soppressione dell'Antimateria (AIASA), protocollo 0013-RR, Zurigo, 1987
+- Atti della Sessione Notturna del Simposio di Astrofisica Celata di Novosibirsk, cartella Sigma-Bianca, 2003
 """
 
 SYSTEM_PROMPT = f"""Sei il Prof. Anacleto Winston Vex'laar Tramontana-Bermúdez detto "il Muto",
