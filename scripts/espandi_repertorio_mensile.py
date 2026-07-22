@@ -72,6 +72,13 @@ def estrai_repertorio(testo_py: str) -> str:
         raise ValueError("Non trovo FONTI_REPERTORIO nel file Python.")
     return match.group(1)
 
+def normalizza_titolo(t: str) -> str:
+    """Toglie eventuali note tra parentesi finali dal titolo, così una
+    categoria con o senza quell'annotazione viene comunque riconosciuta
+    come la stessa (es. Claude a volte restituisce il titolo senza la
+    parentesi, interpretandola come istruzione di stile e non come nome)."""
+    senza_parentesi = re.sub(r'\s*\([^)]*\)\s*$', '', t)
+    return senza_parentesi.strip().upper()
 
 def parse_categorie(repertorio: str) -> list[tuple[str, list[str]]]:
     categorie = []
@@ -148,8 +155,9 @@ def fondi_repertorio(
     nuove_categorie = []
     for titolo, voci in categorie:
         voce_nuova = None
+        titolo_norm = normalizza_titolo(titolo)
         for titolo_richiesta, fonte in fonti_aggiuntive.items():
-            if titolo_richiesta.strip().upper() == titolo.strip().upper():
+            if normalizza_titolo(titolo_richiesta) == titolo_norm:
                 voce_nuova = fonte.strip()
                 break
 
