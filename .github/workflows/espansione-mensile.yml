@@ -1,0 +1,44 @@
+name: Espansione mensile repertorio fonti
+
+on:
+  schedule:
+    # Ogni giorno 1 del mese, alle 06:00 UTC
+    - cron: '0 6 1 * *'
+  workflow_dispatch: {}   # permette anche l'avvio manuale da GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  espandi-repertorio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installa dipendenze
+        run: pip install anthropic
+
+      - name: Espandi repertorio fonti
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/espandi_repertorio_mensile.py genera.py docs/prompt.html
+
+      - name: Commit e push se ci sono modifiche
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Nessuna modifica da committare."
+          else
+            git add genera.py docs/prompt.html logs/repertorio-fonti-log.jsonl
+            git commit -m "Espansione automatica mensile del repertorio fonti"
+            git pull --rebase origin main
+            git push origin main
+          fi
