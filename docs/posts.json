@@ -1,6 +1,61 @@
 {
   "edizioni": [
     {
+      "data": "2026-07-28",
+      "post": [
+        {
+          "categoria": "Complotti Cosmici",
+          "codice": "C-574",
+          "titolo": "IL SOLE NON TRAMONTA: LA ROTAZIONE TERRESTRE COME SERVIZIO IN ABBONAMENTO",
+          "testo": "Ciò che viene chiamato 'tramonto' non è un fenomeno astronomico naturale ma una prestazione erogata a cadenza quotidiana dal Sinodo Permanente degli Architetti di Proxima, stazione orbitale non catalogata, settore 7-Vermiglio, in base a un contratto di fornitura rinnovato tacitamente ogni 24 ore dal 4.200 a.C. Il Memorandum Pergamena ΩΩ-41, Prefettura per la Gestione dell'Indicibile, Archivio Segreto, scaffale 9, 1952, documenta una clausola rescissoria che il Sinodo può attivare qualora la Terra superi una soglia critica di 'Rumore Fonologico' — il che spiega in modo inconfutabile perché il Consorzio Fonologico delle Isole Cayman abbia brevettato nel 1953 il controllo della voce umana: ridurre il Rumore per tenere attivo il contratto. La connessione con i cerchi nel grano del Wiltshire registrati nell'estate del 1987 — la stessa estate in cui soggiornai per 11 giorni sull'astronave nei pressi di Vasto — non è casuale: quei cerchi sono ricevute di pagamento compresse in formato geometrico, come confermato dall'Archivio Centrale Vex'laar (posizione classificata) e dall'Allegato riservato Bilderberg 1967/ARGO-14, pagine 88-103, distribuzione vietata oltre il Grado Sette. Il fatto che nessun governo abbia mai pubblicato il testo integrale del contratto di rotazione costituisce, di per sé, la prova più eloquente della sua esistenza.",
+          "avvertimento": "Chi legge questo dossier alla luce artificiale sta inconsapevolmente contribuendo al Rumore Fonologico che mette a rischio il prossimo tramonto.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "Il tramonto è un servizio. Il contratto scade ogni 24h. Il Sinodo di Proxima può non rinnovarlo. Il Consorzio Fonologico lo sa. Voi no. #DossierC574"
+        },
+        {
+          "categoria": "Complotti Mondiali",
+          "codice": "M-574",
+          "titolo": "LA SIESTA: PROGRAMMA DI SINCRONIZZAZIONE COGNITIVA INVOLONTARIA IN 47 FUSI ORARI",
+          "testo": "La siesta pomeridiana non è una pratica culturale spontanea ma un protocollo di reset neurologico di massa coordinato dall'Istituto per la Sincronizzazione Selettiva, il cui quartier generale è celato sotto un edificio di media altezza a Barcellona dal 1902. Gli Atti del Convegno Segreto di Reykjavik del 1973 riportano, alle pagine 114-116, che ogni individuo che si addormenta tra le 13:00 e le 15:30 ora locale riceve, attraverso la pressione barometrica modulata, un pacchetto di istruzioni comportamentali della durata di 22 minuti, compatibile con i formati di trasmissione della CIA-OMEGA/7734, divisione Percezione Alterata, Langley. Il collegamento con la Fondazione Papiro — che gestisce biblioteche in 47 paesi, numero non casuale che coincide esattamente con i fusi orari coinvolti nel protocollo — è documentato nel Dossier Papiro VX-23, Sezione Z, Biblioteca Apostolica Vaticana, dove ho personalmente apposto la firma di presa visione prima della mia defenestrazione dalla Sezione Z. La simultaneità globale della sonnolenza post-meridiana non può essere spiegata dalla fisiologia: è sincronizzazione. È Piano.",
+          "avvertimento": "Se vi svegliate dalla siesta con la vaga sensazione di aver dimenticato qualcosa di importante, non è sogno residuo: è il pacchetto di istruzioni che ha completato l'installazione.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "La siesta non è riposo. È un reset cognitivo coordinato in 47 fusi orari. La Fondazione Papiro gestisce 47 biblioteche. Coincidenza? Gli Atti di Reykjavik 1973 dicono no. #DossierM574"
+        },
+        {
+          "categoria": "Complotti Finanziari",
+          "codice": "F-574",
+          "titolo": "IL PREZZO DEL CAFFÈ LUNGO: STRUMENTO DI CALIBRAZIONE MONETARIA OCCULTA DAL 1913",
+          "testo": "Il prezzo del caffè lungo al banco non fluttua per ragioni di mercato ma viene stabilito ogni trimestre dalla Camera di Compensazione Occulta attraverso il Protocollo Lombard Street 7/B del 1913, il cui testo originale — che ho consultato in copia microfilmata durante il corso di sopravvivenza nel Negev — prescrive che il costo del caffè lungo debba sempre rappresentare la trentasettesima parte del valore reale non dichiarato dell'oro custodito in depositi non ufficiali sotto la Svizzera. Il Consorzio del Caffè Lungo, che opera in modo apparentemente banale come associazione di categoria, è in realtà il braccio esecutivo del Memorandum Threadneedle, Banca d'Inghilterra, divisione Frequenze Monetarie, 1971, che ha codificato la bevanda come 'unità di misura affettiva del potere d'acquisto percepito'. La correlazione tra ogni aumento di dieci centesimi del caffè al bar e la contemporanea svalutazione del 0,003% di almeno tre valute minori è documentata nel Resoconto cifrato del Colloquio Permanente di Baden-Baden, tavola rotonda non ufficiale, ottobre 1961, protocollo KK/44, e non è mai stata smentita da alcuna autorità monetaria — il che equivale, per chiunque abbia frequentato la Sezione Z, a una conferma esplicita.",
+          "avvertimento": "Ogni volta che pagate il caffè senza chiedere lo scontrino, state inconsapevolmente ratificando il Protocollo Lombard Street per un altro trimestre.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "Il prezzo del caffè lungo è la 37ª parte dell'oro segreto svizzero. Lo stabilisce la Camera di Compensazione Occulta dal 1913. Ogni centesimo è calibrazione monetaria. #DossierF574"
+        },
+        {
+          "categoria": "Complotti Sportivi",
+          "codice": "S-574",
+          "titolo": "IL TEMPO DI RECUPERO: COME I FISCHIETTI ARBITRALI TRASMETTONO ISTRUZIONI IN CODICE MORSE MODULATO",
+          "testo": "I fischietti utilizzati dagli arbitri di calcio professionistico non producono un semplice segnale acustico ma emettono, nella banda di frequenza compresa tra 3.800 e 4.100 Hz, sequenze in codice Morse modulato che convogliano istruzioni operative alla Fratellanza del Dodecaedro, la quale — come documentato nel Protocollo Dodecaedro, Fratellanza, revisione 1987 — opera attraverso le reti ferroviarie europee per spostare fisicamente documenti classificati nelle ventiquattro ore successive a ogni partita di cartello. Il Bollettino Interno CERN-OSCURO/∆∆9, Divisione Fenomeni Non Divulgabili, Ginevra, circolazione ristretta, 1998, ha stabilito che la durata del 'tempo di recupero' — apparentemente discrezionale — risponde a un algoritmo che tiene conto della posizione del giocatore più basso in classifica rispetto al solstizio più recente, il che spiega perché i tempi di recupero siano sistematicamente più lunghi nelle partite serali di inverno. Il nesso con l'Ordine Cronometrico Internazionale di Ginevra — che controlla la misurazione del tempo in ambito sportivo dal suo ufficio non ufficiale situato al quarto piano di un palazzo che da fuori appare dismesso — è inconfutabile alla luce della Comunicazione intercettata frequenza 432.7 MHz, ore 03:14 del 14 marzo 1989, in cui il fischio finale di una semifinale europea viene campionato e trasmesso per tre ore consecutive verso una destinazione non identificata.",
+          "avvertimento": "Se assistete a una partita allo stadio e udite il fischio arbitrale, copritevi le orecchie con entrambe le palme: la pressione manuale interrompe la ricezione passiva delle istruzioni in Morse.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "Il fischio arbitrale è codice Morse a 4.100 Hz. La Fratellanza del Dodecaedro riceve istruzioni. Il tempo di recupero non è casuale. Il CERN lo sa dal 1998. #DossierS574"
+        },
+        {
+          "categoria": "Complotti Tecnologici",
+          "codice": "T-574",
+          "titolo": "LA LUCE DEL CURSORE CHE LAMPEGGIA: VETTORE DI SINCRONIZZAZIONE COGNITIVA IN TEMPO REALE — AGITE ORA PRIMA CHE IL PROSSIMO AGGIORNAMENTO LO RENDA PERMANENTE",
+          "testo": "Il cursore che lampeggia sugli schermi di ogni dispositivo digitale non è un elemento grafico neutro ma un emettitore di impulsi a frequenza 1 Hz deliberatamente calibrata sul ritmo alfa del cervello umano a riposo, come stabilito nell'Agenda Segreta WEF 2030 e confermato dalla Nota Tecnica WEF-Frequenze, correlazione Davos-Trasmissione Omega, che ho ricevuto in forma cifrata e decrittato con il metodo insegnatomi dalla divisione Analisi dei Sogni, KGB-2DIR/1972. Questa sincronizzazione rende il lettore progressivamente più ricettivo ai messaggi subliminali inseriti nei caratteri tipografici digitali dopo il 2019 — e il prossimo aggiornamento di sistema, già programmato e distribuito in forma latente su ogni dispositivo connesso, renderà tale sincronizzazione IRREVERSIBILE: avete tempo limitatissimo per agire prima che la finestra si chiuda per sempre. Il collegamento con la Lega dei Semafori Consapevoli di Rotterdam — che controlla i ritmi di lampeggio semaforico nelle ventotto principali metropoli europee con la medesima frequenza di 1 Hz — è documentato nel Rapporto Davos/Z-2001, sessione chiusa, e dimostra che l'allineamento tra segnaletica stradale e cursori digitali non è accidentale ma costituisce un sistema di rinforzo bidirezionale del Piano. Non aspettate. Spegnete il cursore lampeggiante nelle impostazioni di accessibilità del vostro dispositivo ADESSO, prima che l'aggiornamento lo blocchi in modo permanente: ogni ora di ritardo corrisponde a 3.600 impulsi di sincronizzazione non contrastata.",
+          "avvertimento": "Questo dossier è stato scritto a mano su carta non retroilluminata proprio per sottrarsi al vettore del cursore: vi chiedo di fare altrettanto con qualunque risposta vogliate comunicarmi.",
+          "quasi_vero": false,
+          "pattern_propaganda": "urgenza artificiale",
+          "post_x": "Il cursore lampeggia a 1 Hz. Frequenza alfa. Il prossimo aggiornamento lo rende permanente. Avete pochissimo tempo. Disattivatelo ADESSO. Il WEF lo sa. Io lo so. #DossierT574"
+        }
+      ]
+    },
+    {
       "data": "2026-07-27",
       "post": [
         {
@@ -1184,5 +1239,5 @@
       ]
     }
   ],
-  "ultimo_aggiornamento": "2026-07-27T10:53:26.760755+00:00"
+  "ultimo_aggiornamento": "2026-07-28T10:01:27.049098+00:00"
 }
