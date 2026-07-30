@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name "Il Complottista Bot"
           git config user.email "bot@il-complottista"
-          git add docs/posts.json docs/feed.xml
+          git add docs/posts.json docs/feed.xml coda_x.json
           git diff --staged --quiet || git commit -m "Dossier del $(date +'%Y-%m-%d')"
           git push

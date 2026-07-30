@@ -22,7 +22,10 @@ CATEGORIE = [
 MAX_ARCHIVIO_GIORNI = 30
 POSTS_FILE = "docs/posts.json"
 FEED_FILE = "docs/feed.xml"
+CODA_FILE = "coda_x.json"
 SITE_URL = "https://vicknopf11.github.io/il-complottista"
+PREFISSO_X = "🎭 SATIRA — "
+LIMITE_X = 265
 # ────────────────────────────────────────────────────────────────
 
 # Giorno della settimana in cui includere una correlazione spuria storica
@@ -341,6 +344,24 @@ def valida_pattern_propaganda(edizione: dict) -> dict:
 
     return edizione
 
+def crea_coda_x(edizione: dict) -> None:
+    """Crea la coda dei tweet del giorno (5 dossier), da pubblicare uno alla
+    volta più avanti nella giornata tramite pubblica_tweet.py. Ogni tweet è
+    prefissato per segnalare inequivocabilmente la natura satirica anche a
+    chi legge solo il post, senza contesto del sito."""
+    tweet = []
+    for p in edizione.get("post", []):
+        base = p.get("post_x") or p.get("testo", "")
+        testo = f"{PREFISSO_X}{base}"
+        if len(testo) > LIMITE_X:
+            spazio_utile = LIMITE_X - len(PREFISSO_X) - 3  # 3 per "..."
+            testo = f"{PREFISSO_X}{base[:spazio_utile]}..."
+        tweet.append({"testo": testo, "pubblicato": False})
+
+    coda = {"data": edizione.get("data"), "tweet": tweet}
+    with open(CODA_FILE, "w", encoding="utf-8") as f:
+        json.dump(coda, f, ensure_ascii=False, indent=2)
+    print(f"✓ Coda tweet creata — {len(coda['tweet'])} in attesa di pubblicazione")
 
 def aggiorna_archivio(nuova_edizione: dict) -> None:
     if os.path.exists(POSTS_FILE):
@@ -430,6 +451,7 @@ if __name__ == "__main__":
     n = len(edizione.get("post", []))
     print(f"✓ Generati {n} dossier per il {edizione.get('data')}")
     aggiorna_archivio(edizione)
+    crea_coda_x(edizione)
     with open(POSTS_FILE, encoding="utf-8") as f:
         archivio = json.load(f)
     genera_rss(archivio)
