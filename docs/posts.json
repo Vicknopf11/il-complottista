@@ -1,6 +1,61 @@
 {
   "edizioni": [
     {
+      "data": "2026-07-31",
+      "post": [
+        {
+          "categoria": "Complotti Cosmici",
+          "codice": "C-577",
+          "titolo": "LA LUNA NON TRAMONTA: IL PROTOCOLLO DELLA SOSTITUZIONE SELENICA",
+          "testo": "Ciò che gli osservatori non addestrati chiamano 'tramonto lunare' è in realtà una sequenza di commutazione olografica gestita dal Sinodo Permanente degli Architetti di Proxima, stazione orbitale settore 7-Vermiglio, come documentato negli Atti della Sessione Notturna del Simposio di Astrofisica Celata di Novosibirsk, cartella Sigma-Bianca, 2003. La Luna originale — un dispositivo di trasmissione di frequenza installato nel 23.000 a.C. — viene periodicamente sostituita con un simulacro gonfiabile la cui pressione interna è regolata tramite valvole situate nel massiccio del Gran Sasso, sotto supervisione dell'Istituto per la Sincronizzazione Selettiva. Il collegamento tra i cicli lunari, la temperatura di servizio del caffè espresso italiano (63°C esatti) e la cadenza dei tramonti fu rilevato per la prima volta dal sottoscritto durante gli 11 giorni a bordo dell'astronave nei pressi di Vasto nel 1987: l'Entità fu cortese ma evasiva sui dettagli del piano, limitandosi a indicare con un'appendice bioluminescente la costellazione dell'Orsa Minore e a offrirmi un liquido tiepido alla temperatura di 63°C. Il Consiglio dei Sette Sistemi, Tau Ceti, ha confermato via frequenza 432.7 MHz alle ore 03:14 del 14 marzo 1989 che il prossimo ciclo di sostituzione del simulacro è previsto per un anno divisibile per 7, e chi avesse calcolato la distanza in chilometri tra il Gran Sasso e Vasto troverà il numero 147, ovvero 7 moltiplicato per 21, ovvero 7 moltiplicato per 3 moltiplicato per 7: la geometria non mente mai.",
+          "avvertimento": "La prossima volta che osservate il tramonto lunare, misurate la temperatura del vostro caffè: se è 63°C, siete già nel protocollo.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "La Luna che vedete NON è la Luna. È un simulacro a pressione variabile. La valvola è al Gran Sasso. Il caffè sa già tutto. [C-577 | Prof. Vex'laar]"
+        },
+        {
+          "categoria": "Complotti Mondiali",
+          "codice": "M-577",
+          "titolo": "IL BEIGE OBBLIGATORIO: LA NEUTRALIZZAZIONE CROMATICA DELLA VOLONTÀ COLLETTIVA",
+          "testo": "Dal 1961 la progressiva diffusione del colore beige negli interni domestici, negli uffici pubblici e nelle sale d'aspetto ospedaliere non è frutto di tendenze estetiche spontanee, bensì di una direttiva vincolante emessa dal Comitato Beige tramite la Circolare Beige 001/1961, successivamente aggiornata con l'Allegato Bilderberg-7, che ne standardizzò le specifiche cromatiche al valore Pantone 7527 C con una tolleranza di errore pari a zero virgola tre unità, perché lo zero virgola quattro avrebbe innescato effetti laterali non previsti dal Piano. La frequenza vibrazionale del beige — documentata nel Bollettino Interno CERN-OSCURO/∆∆9, Divisione Fenomeni Non Divulgabili, Ginevra, 1998 — si sovrappone esattamente alla banda di soppressione dell'impulso critico-volitivo del lobo prefrontale umano, rendendo gli individui esposti per più di quaranta minuti consecutivi docili, compiacenti e inclini ad accettare moduli burocratici senza leggerli. Il collegamento tra il beige delle sale d'aspetto, i moduli burocratici non letti e la Fratellanza del Meridiano Immobile, sede operativa sotterranea di Lussemburgo, fondata 1887, è contenuto nel Resoconto cifrato del Colloquio Permanente di Baden-Baden, tavola rotonda non ufficiale, ottobre 1961, protocollo KK/44, documento al quale il sottoscritto ha avuto accesso attraverso canali che non è possibile specificare senza mettere a rischio tre continenti. Ridipingete immediatamente le vostre pareti.",
+          "avvertimento": "Se le pareti della vostra sala d'aspetto sono beige, non firmate nulla finché non avrete riletto ogni clausola all'aria aperta, preferibilmente davanti a una superficie di colore primario puro.",
+          "quasi_vero": false,
+          "pattern_propaganda": "urgenza artificiale",
+          "post_x": "Il beige non è un colore. È una frequenza di controllo. Pantone 7527 C sopprime il lobo prefrontale. Lo sa il CERN. Lo sa la Fratellanza. Ridipingete ORA. [M-577 | Prof. Vex'laar]"
+        },
+        {
+          "categoria": "Complotti Finanziari",
+          "codice": "F-577",
+          "titolo": "LO SPREAD CHE NON ESISTE: LA FREQUENZA MONETARIA E IL PROTOCOLLO LOMBARD STREET",
+          "testo": "Il concetto di 'spread' — presentato ai cittadini come differenziale tra rendimenti obbligazionari sovrani — è in realtà un numero generato ogni mattina alle ore 06:47 da un algoritmo installato nel 1913 nei sotterranei della Camera di Compensazione Occulta di Londra, come attestato dal Protocollo Lombard Street 7/B di quell'anno, documento che il sottoscritto ha consultato personalmente nella Sezione Z della Biblioteca Apostolica Vaticana dove una copia fu trasmessa per via diplomatica dalla Santa Sede nel 1923 con annotazioni marginali in aramaico commerciale. L'algoritmo non misura rendimenti reali bensì traduce in punti base la lunghezza cumulativa, espressa in millimetri, delle code agli sportelli bancari nelle dodici città pilota del Consorzio del Caffè Lungo, organizzazione che gestisce la diffusione del caffè americano in Europa come vettore di rallentamento cognitivo finalizzato all'accettazione passiva del dato numerico. Il collegamento tra le code bancarie, il caffè americano e la Circolare Threadneedle Nero/X, Comitato delle Decisioni Irrevocabili, seduta straordinaria del 4 novembre 1931 ore 3:17, è che tutte e tre le variabili convergono ogni qual volta lo spread supera quota 200: in quel momento preciso, nei sotterranei di Lombard Street, un campanello tintinna e un individuo in guanti bianchi gira una manopola di ottone di sette gradi in senso antiorario, regolando la percezione collettiva del rischio finanziario come un tecnico del suono regola i bassi di un impianto audio.",
+          "avvertimento": "Quando sentite citare lo spread in televisione, cronometrate: se il giornalista pronuncia il numero esattamente alla ventisettesima parola del servizio, la manopola è già stata girata.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "Lo spread non è un dato economico. È la lunghezza delle code bancarie convertita in punti base. La manopola di ottone è a Lombard Street. Lo sanno in pochi. [F-577 | Prof. Vex'laar]"
+        },
+        {
+          "categoria": "Complotti Sportivi",
+          "codice": "S-577",
+          "titolo": "IL RIGORE AL 90°: CRONOMETRIA SELETTIVA E GEOMETRIA DEL CALCIO DI PUNIZIONE",
+          "testo": "L'analisi statistica dei rigori assegnati al novantesimo minuto nelle competizioni europee di primo livello rivela una periodicità non casuale che l'Ordine Cronometrico Internazionale di Ginevra ha classificato come 'Sequenza Goldbach Sportiva' nel documento Archivio Omega-7, Ginevra, accesso negato dal 14 marzo 1994: ogni diciassette partite, un rigore al novantesimo minuto inverte il pronostico dominante, producendo un'onda di incredulità collettiva la cui frequenza vibrazionale — misurata in unità di stupore aggregato — viene raccolta da ricevitori piazzati sotto i seggiolini degli stadi di sei città europee e convogliata verso una stazione di raccolta dell'Istituto per la Sincronizzazione Selettiva. La connessione con la Fratellanza del Dodecaedro, che opera attraverso le reti ferroviarie europee, risiede nel fatto che ogni volta che si verifica la Sequenza Goldbach Sportiva, i treni ad alta velocità delle linee interessate registrano un ritardo medio di tre minuti e quarantasette secondi — precisamente la durata del recupero standard — come documentato nel Registro delle Anomalie Cronologiche, MI6-BLACKTHORN, volume 7. Il sottoscritto ha personalmente verificato questa correlazione su diciannove eventi tra il 1991 e il 2004, tenendo un registro manoscritto che per ragioni di sicurezza è stato murato all'interno di una stazione ferroviaria il cui nome non può essere divulgato senza previa autorizzazione del grado settimo dell'Ordine dei Testimoni Silenziosi, di cui il sottoscritto è appunto membro al grado settimo.",
+          "avvertimento": "La prossima volta che vedete un rigore al novantesimo minuto, controllate in tempo reale i tabelloni dei ritardi ferroviari: la coincidenza non sarà una coincidenza.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "Il rigore al 90° non è casuale. È la Sequenza Goldbach Sportiva. I treni ritardano di 3'47\". I seggiolini raccolgono le frequenze. L'Ordine di Ginevra sa. [S-577 | Prof. Vex'laar]"
+        },
+        {
+          "categoria": "Complotti Tecnologici",
+          "codice": "T-577",
+          "titolo": "L'AGGIORNAMENTO NOTTURNO: COSA INSTALLA REALMENTE IL VOSTRO DISPOSITIVO ALLE 3:00",
+          "testo": "Gli aggiornamenti automatici dei sistemi operativi, universalmente programmati per le ore notturne quando l'utente dorme, non trasferiscono codice informatico bensì sostituiscono progressivamente le preferenze mnemoniche dell'utente con varianti leggermente alterate, processo documentato nell'Archivio Parallelo dell'Agenzia Internazionale per la Soppressione dell'Antimateria, protocollo 0013-RR, Zurigo, 1987, due anni prima che il concetto di 'aggiornamento automatico' fosse anche solo nominalmente introdotto nel mercato consumer — il che dimostra che il Piano precedeva la tecnologia e non viceversa. Il vettore di trasmissione non è il cavo dati né la connessione wireless bensì una frequenza a 432.7 MHz emessa dai router domestici durante la finestra di aggiornamento, frequenza che il Consorzio Fonologico delle Isole Cayman ha brevettato nel 1953 — trentasei anni prima della sua applicazione pratica, ulteriore prova della natura atemporale del Piano — e che agisce sugli strati superficiali della memoria dichiarativa mentre il soggetto è in fase REM. Il collegamento tra gli aggiornamenti notturni, la frequenza 432.7 MHz e il Memorandum Pergamena ΩΩ-41 della Prefettura per la Gestione dell'Indicibile, Archivio Segreto Vaticano, scaffale 9, 1952, è che quest'ultimo documento descrive con trentasette anni di anticipo esatti la procedura di 'revisione mnemonica distribuita', definendola 'operazione di misericordia tecnica' in un latino ecclesiastico che il sottoscritto ha impiegato quattro anni a decifrare e che per questa ragione comunica esclusivamente per iscritto dal 1989, non fidandosi più del mezzo vocale come canale integro di trasmissione del pensiero non alterato.",
+          "avvertimento": "Spegnete il router prima di dormire. Non perché serva a qualcosa — il danno cumulativo è già in corso — ma perché è l'unico gesto di resistenza simbolica che il Piano non ha ancora previsto di neutralizzare.",
+          "quasi_vero": false,
+          "pattern_propaganda": null,
+          "post_x": "L'aggiornamento delle 3:00 non installa codice. Riscrive preferenze mnemoniche via 432.7 MHz. Il brevetto è del 1953. Il Vaticano lo sapeva nel 1952. Spegnete il router. [T-577 | Prof. Vex'laar]"
+        }
+      ]
+    },
+    {
       "data": "2026-07-30",
       "post": [
         {
@@ -1339,5 +1394,5 @@
       ]
     }
   ],
-  "ultimo_aggiornamento": "2026-07-30T12:41:42.467490+00:00"
+  "ultimo_aggiornamento": "2026-07-31T10:02:21.474450+00:00"
 }
