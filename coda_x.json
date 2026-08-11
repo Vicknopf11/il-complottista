@@ -1,21 +1,25 @@
 {
-  "data": "2026-08-10",
+  "data": "2026-08-11",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — Il Sole è in manutenzione dal 1412. HELIO-PROXY/4 emette a 432.7 MHz. Il contratto galattico scade nel 2027. Il beige non è un colore: è una clausola contrattuale. #Vex'laar #C587",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — La Luna è in ritardo di 11 minuti. Dal 2019. Il Sinodo di Orione lo sapeva. Il caffè lungo fa il resto. Giovedì e venerdì si stanno fondendo. Vol. 7, pag. 441. Siete già nodi. #C588 #VexlaarRivela",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Il piccione sul vostro davanzale è un drone biologico della Fratellanza del Meridiano Immobile. Registra. Trasmette. Vi fa sognare fontane ottagonali. Dal 1961. #Vex'laar #M587",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Beige. Seggiolini aerei. Cartoni uova. Moquette ministeriali. LED a 4000K. Vaduz 1961. Il Comitato Beige è già nelle vostre case. Tinteggiate ADESSO. #M588 #ComitatiBeige #VexlaarAvverte",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — L'avocado matura 11 giorni prima del rialzo dei tassi. Il vostro espresso del mattino è un voto monetario. La Commissione Permanente per la Forma delle Cose lo sa dal 1929. #Vex'laar #F587",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Banconota da 50€. 7 Hz. ATM dopo le 22:00. Stadio theta. Spesa impulsiva +23%. Memorandum Threadneedle lo sapeva nel 1913. Il contante vibra. Il rame protegge. #F588 #FrequenzeMonetarie",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — 42,195 km non è una distanza. È una frequenza. Quarantamila runner sincronizzati spostano l'orbita terrestre di 0,003 arcosecondi. Il CPOI lo sa dal 1968. #Vex'laar #S587",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Messico 1968. Quota 2200m. 0,003 secondi per falcata. L'Ordine Cronometrico corregge tutto. Nessun record mondiale su pista è reale. Il meridiano di Lussemburgo sa. #S588 #CronometroInvisibile",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — Modalità aereo: non disattiva nulla. Modulo Zeta a 432,7 MHz. Addormentati. In volo. Con 528 Hz. = evento Zeta-completo. Il CERN-OSCURO lo sa dal 1998. Foglio di alluminio. Subito. #T588 #ModuloZeta",
+      "pubblicato": false
     }
   ]
 }
