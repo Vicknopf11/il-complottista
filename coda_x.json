@@ -1,21 +1,25 @@
 {
-  "data": "2026-10-06",
+  "data": "2026-10-07",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — La Luna non è un satellite. È un hard disk. Ogni sogno che fate viene archiviato a Tau Ceti. Il ciclo lunare è un protocollo dati. KGB-2DIR/1972 lo sapeva. Vaticano lo sa. Voi dormite. [C-644]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — La rotazione terrestre è un SERVIZIO IN ABBONAMENTO. Scade ogni 11 anni. Il rinnovo avviene in frequenza 432.7 MHz alle 03:14. Le cattedrali gotiche sono le antenne. #Verità #C645",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Beige. Pantone 7527 C. Bilderberg 1954. Dopamina -17,3%. Sale d'attesa, aeroporti, uffici. Non è un'estetica. È un'arma. Il Comitato Beige vi guarda aspettare. [M-644]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Il beige non è un colore. È un PROGETTO. Deliberato. Ratificato. Documentato nell'Allegato Bilderberg 1967/ARGO-14. Guardate le pareti intorno a voi. Il Comitato Beige vi osserva. #Beige #M645",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Ogni pagamento che fate lascia 0,0001 centesimi in un conto che non esiste. Moltiplicato per 8 miliardi di persone per 50 anni. Ho il documento. È timbrato: NON ESISTE. [F-644]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — I tassi d'interesse NON li decide nessun banchiere. Li trasmette il magma. Convertiti a Londra dal 1863. Documentato: Memorandum Threadneedle 1971. L'Etna parla. Le banche obbediscono. #Finanza #F645",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — I record mondiali non misurano gli atleti. Codificano istruzioni per ricevitori nascosti negli stadi dal 1952. Nodo lunare ascendente. Spread BTP. Protocollo CRONOS/Σ-FALSO/44. [S-644]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Dal 2000 al 2009: +3 libbre di formaggio pro capite USA. +medaglie d'oro olimpiche totali. Correlazione: 94%. Coincidenza? Il Consorzio del Caffè Lungo ringrazia. [FATTI REALI, NESSO INVENTATO] #S645",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — Ogni boot sequence invia 512 byte alle coordinate di Vasto, 1987. Frequenza: 432.7 MHz. Intel 486DX2: scarto 0,003 MHz. L'Entità riceve. Ogni. Singola. Volta. #Tech #T645 #Vasto",
+      "pubblicato": false
     }
   ]
 }
