@@ -1,21 +1,25 @@
 {
-  "data": "2026-10-30",
+  "data": "2026-10-31",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — La Luna non tramonta. Viene RITIRATA. Il Sinodo di Kepler-452b gestisce ogni ciclo. La frequenza 432.7 MHz ne è la ricevuta. Dossier Papiro VX-23 lo conferma. Io ero lì. #ProtocolloUmbraStellare",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — La Luna non ruota perché non può: è vincolata da contratto. I crateri tracciano le sedi della Fondazione Papiro. L'Archivio Centrale Vex'laar è lì. Lo so perché ci sono stato. #ProtokolloSeleniko",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Il BEIGE non è un colore. È un protocollo. Circolare 001/1961. Ferrovie europee. Moduli fiscali. 47 nazioni. BND-SCHATTEN/1141 lo ha misurato. Io no: io scrivo su carta bianca. Voi? #ComitatiBeige",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Il beige non è un colore: è una frequenza di controllo a 432.7 MHz. Ospedali, uffici, poste. 112 nazioni. Dal 1961. Circolare Beige 001 lo prova. Contate i minuti che passate in quelle stanze. #ComitatoBeige",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Il tasso di interesse segue le maree. Le maree seguono Tau Ceti. Il caffè bancario trasmette il segnale. Memorandum Threadneedle 1971, p.33. Crisi 2008: 0.003 bar di troppo. Le banconote sono antenne. #PattoThreadneedle",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Le transazioni nei 0,003 secondi tra due ticchettii dell'orologio atomico finanziano l'Ordine Cronometrico di Ginevra. I semafori di Rotterdam trasmettono in Morse. Il cambio dell'ora non è mai stato abolito per ragioni. #IlResiduo",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — I record mondiali sono falsi. FOCT-OMBRA altera il cronometro di 0.047 secondi. Monaco 1972: linee ley sotto il traguardo. Dodecaedro fornisce le bevande. CPOI 1968 lo aveva già pianificato. #CronosFalso",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — I record mondiali di atletica non cadono mai per caso. L'ionosfera viene compressa di 3,7 km dalla MSS-TIANMU/3 in finestre di 11 minuti. CPOI Losanna 1968 lo documenta. I cronometri sanno. #FOCT_OMBRA",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — Il vostro dispositivo si riavvia alle 03:17 perché quella è la soglia di permeabilità cognitiva massima. La telecamera registra. I dati vanno a Davos, poi alle Forme Geometriche Superiori. Spegnete prima delle 03:00. #AggiornatoSilenzioso",
+      "pubblicato": false
     }
   ]
 }
