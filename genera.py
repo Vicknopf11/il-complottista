@@ -46,6 +46,7 @@ SERVIZI SEGRETI TERRESTRI (usa con rotazione, non sempre SISMI):
 - BND-SCHATTEN/1141 — Referat Percezione Controllata della Realtà, sede operativa sotto-livello 4, Pullach, operativo dal 1963
 - BND-SCHATTEN/∞2 — sezione Risonanze Cognitive Involontarie, Bad Homburg, piano interrato non catastato
 - UMBRA-NOCTIS/∆∆∆-009 — Sezione Identità Climatiche Alterate, sede operativa mobile, Tallinn
+- UMBRA-NEST/9901 — Unità Infiltrazione Percezione Consensuale, sede dichiarata: agenzia di pompe funebri, Lussemburgo
 
 ORGANIZZAZIONI OSCURE TERRESTRI:
 - Ordine Cronometrico Internazionale, Ginevra
@@ -61,6 +62,7 @@ ORGANIZZAZIONI OSCURE TERRESTRI:
 - Fratellanza dei Meridiani Convergenti, sede rotante ogni 11 anni, attualmente accreditata a Bruges
 - Fratellanza Isobarica del Meridiano Zero, sede itinerante su longitudine 0°, fondata nel 1851 durante una eclissi non documentata
 - Fratellanza del Meridiano Suppresso, sede rotante tra Brest-Litovsk e Valparaíso, fondata nel 1887 durante un'eclissi amministrativa
+- Confraternita del Pendolo Immobile, sede rotante, Liechtenstein, fondata nel 1712 e ufficialmente mai sciolta
 
 ORGANIZZAZIONI OSCURE GALATTICHE:
 - Consiglio dei Sette Sistemi, Tau Ceti
@@ -74,6 +76,7 @@ ORGANIZZAZIONI OSCURE GALATTICHE:
 - Sinodo Permanente delle Nebulose Amministrative, Cintura di Orione, sezione locale: Ginevra
 - Sinodo delle Entità Perimetrali di Kepler-452b, Divisione Interferenze Cronologiche, protocollo UMBRA-STELLARE/Ω
 - Lega dei Pianeti Ammutinati, Cintura di Kuiper — Ufficio di Coordinamento Iperspaziale, settore 7-GAMMA
+- Sinodo Permanente delle Frequenze Oblique, Sistema di Kepler-442, sezione distaccata orbitante tra Giove e Saturno
 
 RAPPORTI E ARCHIVI — VATICANO:
 - Dossier Papiro VX-23, Sezione Z, Biblioteca Apostolica Vaticana
@@ -85,6 +88,7 @@ RAPPORTI E ARCHIVI — VATICANO:
 - Memorandum Sub Rosa VX-91/Ω, Prefettura degli Affari Indicibili, Archivio Apostolico Vaticano, scaffale non catalogato, 1887
 - Memorandum Pergamena YΩ-7, Sottoarchivio delle Lacune Deliberate, Grotte Vaticane, livello –4, 1903, timbro: NON ESISTE
 - Fascicolo Pergamena ΩΩ-41, Sottosezione Apocripha Tecnica, Archivio Sotterraneo Lateranense, livello -4, accesso vietato anche al custode
+- Circolare Riservata VX-91/SIGMA, Commissione per i Fenomeni Documentalmente Impossibili, Archivio Sub-Sotterraneo Apostolico, strato Gamma, 1487
 
 RAPPORTI E ARCHIVI — CITY OF LONDON:
 - Protocollo Lombard Street 7/B, Camera di Compensazione Occulta, 1913
@@ -95,6 +99,7 @@ RAPPORTI E ARCHIVI — CITY OF LONDON:
 - Atto Interno Threadneedle Obscura 12/F, Comitato per la Gestione dei Flussi Impronunciabili, 1929, copia unica
 - Accordo Threadneedle 00/X, Registro delle Transazioni Che Non Hanno Avuto Luogo, Camera Numismatica Ombra, 1887
 - Memorandum Threadneedle/OSCURO-3, Commissione Invisibile per la Stabilità Metafisica dei Mercati, 1931, timbro: NON ESISTE
+- Memorandum Threadneedle Δ/12, Comitato per la Gestione delle Liquidità Non Esistenti, Camera Ipogea della Sterlina Parallela, 1888
 
 RAPPORTI E ARCHIVI — BILDERBERG:
 - Verbale Bilderberg 1954/OMEGA, sessione notturna non registrata
@@ -105,6 +110,7 @@ RAPPORTI E ARCHIVI — BILDERBERG:
 - Allegato Riservato Bilderberg 1973/SIGILLO-Γ, tavola rotonda pre-alba, sessione non verbalizzata su richiesta unanime
 - Trascrizione Bilderberg 1967/PHASMA, sessione pre-alba, lingua non identificata, traduzione approssimativa allegata su carta autodistruggente
 - Allegato Bilderberg 1962/ZETA-NERA, riunione pre-ufficiale, corridoio ovest, resoconto di tre righe e mezza, autore: anonimo con calligrafia riconoscibile
+- Appendice Bilderberg 1962/KAPPA-Notte, allegato non numerato, redatto a mano su carta autodistruggente parzialmente sopravvissuta
 
 RAPPORTI E ARCHIVI — WORLD ECONOMIC FORUM:
 - Rapporto Davos/Z-2001, sessione chiusa
@@ -115,6 +121,7 @@ RAPPORTI E ARCHIVI — WORLD ECONOMIC FORUM:
 - Appendice Davos/NERO-2009, Sotto-Commissione per gli Scenari Non Ammissibili, distribuzione: 4 copie, 3 ritirate
 - Appendice Davos/LARVA-9, 2003, distribuzione ristretta ai partecipanti che non risultano presenti negli elenchi ufficiali
 - Nota Interna Davos/∆-OMBRA-17, distribuzione ristretta ai partecipanti del panel non inserito nel programma, 2003, ora di redazione: 03:17
+- Comunicato Interno Davos/NERO-2009, distribuzione riservata ai partecipanti del piano interrato, sessione denominata ufficialmente 'pausa caffè'
 
 RAPPORTI E ARCHIVI — ALTRE ISTITUZIONI:
 - Atti del Convegno Segreto di Reykjavik, 1973
@@ -132,6 +139,7 @@ RAPPORTI E ARCHIVI — ALTRE ISTITUZIONI:
 - Resoconto della Riunione Plenaria Occulta di Vaduz, 1961, trascrizione stenografica cifrata, traduzione parziale disponibile
 - Atti del Simposio Clandestino di Andorra la Vella, 1966, protocollo PIETRA LISCIA/∆3, raccolti su supporto magnetico poi smagnetizzato intenzionalmente
 - Verbale della Riunione Straordinaria del Comitato Occulto di Lugano, 1958, sessione doppia — versione B (la versione A non è mai esistita ufficialmente)
+- Verbale del Simposio Clandestino di Vaduz sul Controllo delle Coincidenze, ottobre 1961, fascicolo sigillato con ceralacca di provenienza ignota
 
 RAPPORTI PERSONALI DEL PROF. (usa con parsimonia, mai due volte di fila):
 - Rapporto Vex'laar-Bermúdez, faldone [N], allegato [lettera]
@@ -144,6 +152,7 @@ RAPPORTI PERSONALI DEL PROF. (usa con parsimonia, mai due volte di fila):
 - Rapporto Vex'laar-Bermúdez, faldone XIV, allegato Q — annotazioni manoscritte su tovagliolo, Hotel Anonimo, Bratislava, ore 3:17
 - Rapporto Vex'laar-Bermúdez, faldone XVII, allegato Q-bis, scritto durante un'interruzione di corrente non casuale, Ginevra, notte tra il 3 e il 4 febbraio (anno omesso per ragioni di sicurezza)
 - Rapporto Vex'laar-Bermúdez, faldone XIV, allegato Ξ, nota a margine cifrata con inchiostro termosensibile
+- Rapporto Vex'laar-Bermúdez, faldone XVII, allegato Q-bis, annotazione marginale cifrata aggiunta in seguito a disturbi del sonno ritenuti non casuali
 
 RAPPORTI E ARCHIVI — ISTITUZIONI SCIENTIFICHE OMBRA:
 - Bollettino Interno CERN-OSCURO/∆∆9, Divisione Fenomeni Non Divulgabili, Ginevra, circolazione ristretta, 1998
@@ -152,6 +161,7 @@ RAPPORTI E ARCHIVI — ISTITUZIONI SCIENTIFICHE OMBRA:
 - Comunicato Interno ITER-OMBRA/ΨΨ3, Divisione Plasmi Cognitivi Non Pubblicabili, Cadarache, 2004, accesso negato anche agli autori
 - Circolare IUPAC-OMBRA/ΨΨ-12, Commissione per gli Elementi Chimici Non Ancora Negati, distribuzione capillare negata, 2004
 - Comunicato Riservato dell'Accademia Parallela per la Fisica dei Fenomeni Inconfessabili (APFFI), Divisione Costanti Fisiche Negoziabili, Zurigo-Ombra, protocollo QUARKON/∇-77, 1991, tiratura: 3 esemplari di cui uno autodistrutto per umidità
+- Nota Tecnica Interna dell'Osservatorio Parallelo di Arecibo-Ombra (OPAO), Divisione Segnali Ricevuti e Immediatamente Negati, protocollo SILENZIO/∆∆17, 1977, distribuzione zero
 
 RAPPORTI E ARCHIVI — ORGANIZZAZIONI SPORTIVE OMBRA (uso con cautela: settore ad alta densità di depistaggi):
 - Verbale Riservato del Comitato Parallelo Olimpico Invisibile (CPOI), sessione sotterranea, Losanna, 1968, protocollo Δ-FLAMME/19
@@ -159,17 +169,25 @@ RAPPORTI E ARCHIVI — ORGANIZZAZIONI SPORTIVE OMBRA (uso con cautela: settore a
 - Circolare interna World Athletics Clandestina (WAC-∞), Divisione Prestazioni Non Dichiarabili, Monaco, 1972, timbro: DISTRUGGERE DOPO LETTURA — non distrutto
 - Relazione Riservata della Federazione Internazionale Ombra del Canottaggio Subacqueo (FIOCS), sessione plenaria sommersa, Ginevra, 1971, protocollo Σ-REMO/OSCURO
 - Circolare Riservata della Federazione Ombra per il Controllo dei Tempi Cronometrati (FOCT-OMBRA), sessione notturna non verbalizzata, Monaco di Baviera, 1972, protocollo CRONOS/Σ-FALSO/44
+- Circolare Riservata della Federazione Mondiale del Cronometraggio Occulto (FMCO), Divisione Tempi Non Omologabili, sede segreta di Ginevra, protocollo STOPWATCH/Ψ-33, 1952, consultabile solo a gara conclusa
 
 RAPPORTI E ARCHIVI — METEOROLOGIA OCCULTA (settore instabile: frequenti interferenze ionosferiche sui documenti):
 - Circolare Interna dell'Istituto Barometrico Ombra (IBO), Divisione Perturbazioni Intenzionali, sede sotterranea di Trieste, protocollo NUVOLA/∇-441, 1961, distribuzione vietata ai piani superiori
 - Verbale della Commissione Segreta per il Controllo delle Correnti a Getto, sessione invernale non climatizzata, Reykjavik, 1979, allegato VORTEX-PRIME/88, sigillato con ceralacca ionizzata
 - Bollettino Riservato dell'Osservatorio Fantasma di Capo Horn, Serie Tempeste Artificiali, fascicolo ∆∆-CIRRO/7, 1953, consultabile solo durante pressione atmosferica inferiore a 987 hPa
 - Nota Operativa dell'Osservatorio Anemologico Clandestino (OAC), Divisione Venti Non Previsti Intenzionalmente, sede mobile tra Faroe e Ushuaia, protocollo TRAMONTANA/∆∆-7, 1974, documento recuperato dopo tre anni su una deriva oceanica
+- Memorandum Interno del Centro di Previsione Atmosferica Non Divulgabile (CPAND), Sezione Anticicloni Pilotati, sede sotterranea di Innsbruck, protocollo ISOBAR/∆-779, 1984, classificato fino a data meteorologicamente indeterminata
 
 RAPPORTI E ARCHIVI — OCEANOGRAFIA PROFONDA RISERVATA (settore sommerso: documenti soggetti a pressione abissale e quindi parzialmente illeggibili per disegno):
 - Memorandum Interno dell'Istituto Batimetrico Clandestino (IBC), Divisione Correnti Non Autorizzate, sede subacquea Mobile Alpha-7, protocollo ABISSO/Σ-002, 1977, distribuzione limitata a personale in apnea certificata
 - Circolare Riservata del Consorzio Occulto per le Fosse Oceaniche (COFO), Sezione Maelström Artificiali, Tromsø sommersa, codice VORTEX/∇∇-88, 1964, sigillata con ceralacca idrorepellente
 - Atti della Seduta Sommersa del Gruppo Talasso-Operativo Ombra (GTOO), Fossa delle Marianne — Sala Riunioni B, livello -11.000m, verbale ABYSSUS/∆-1, 1983, copie esistenti: 2
+- Circolare Sigillata dell'Osservatorio Subacqueo Riservato dell'Adriatico Profondo (OSRAP), Divisione Termoclini Artificiali, sede mobile Gamma-Abisso-3, protocollo SALINO/Ω-014, 1963, testo in parte dissolto per scelta deliberata del redattore
+
+RAPPORTI E ARCHIVI — GEODESIA OCCULTA E CARTOGRAFIA PROIBITA (settore ad altissima instabilità: le coordinate variano autonomamente dopo la stampa):
+- Bollettino Riservato dell'Istituto Geodetico Parallelo (IGP), Divisione Meridiani Non Omologati, sede mobile sotterranea di Vaduz, protocollo LATITUDINE/Ψ-113, 1952, distribuzione vietata a chiunque sia in possesso di una bussola regolare
+- Circolare Interna del Catasto Ombra Internazionale (COI), Sezione Confini Rimossi per Ragioni Superiori, deposito blindato di Andorra, protocollo PERIMETRO/∇-07, 1931, copia unica bruciata e poi recuperata
+- Memorandum Classificato dell'Archivio Cartografico Clandestino di Berna (ACCB), Divisione Proiezioni Distorte Intenzionalmente, protocollo MERCATORE/Ω-55, 1899, visionabile solo in assenza di luce diretta
 """
 
 SYSTEM_PROMPT = f"""Sei il Prof. Anacleto Winston Vex'laar Tramontana-Bermúdez detto "il Muto",
