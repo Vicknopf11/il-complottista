@@ -1,21 +1,25 @@
 {
-  "data": "2026-11-05",
+  "data": "2026-11-06",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — Orione si sposta. I tuoi sogni vengono riscritti. Le molle del tuo materasso sono la ricetrasmittente. Il Piano è in corso da prima che esistesse il tempo. Dossier C-674. #VexlaarRivela",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Orione non è una costellazione. È un Dispositivo Amministrativo. I campanili del Duomo di Milano lo confermano. La Frequenza è attiva. #DossierC675 #Vex'laar",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Ospedali. Scuole. Aeroporti. Tutti beige. Non è estetica: è protocollo. Il Comitato controlla le vostre pareti dal 1961. Voi lo chiamate colore. Io lo chiamo resa. Dossier M-674. #VexlaarRivela",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — L'Islanda vive in un fuso orario che non dovrebbe esistere. 60 minuti sottratti alla giurisdizione terrestre ogni giorno. Il merluzzo essiccato è la chiave. #DossierM675",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Cinque centesimi. 7,83 Hz. Sistema limbico compromesso. Ogni volta che paghi in spiccioli, qualcuno a Lombard Street ti legge il nucleo accumbente. Svuota le tasche. Dossier F-674. #VexlaarRivela",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — I tassi di interesse sono calcolati da una tavoletta sumerica. Lombard Street lo sa dal 1913. La temperatura degli uffici postali è la firma. #DossierF675 #FunzionePrimordiale",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Ogni maratona olimpica. Ogni tempo ufficiale. 11 secondi nascosti. Non è atletica: è trasmissione. L'Entità di Vasto riceve. Dal 1952. Dossier S-674. #VexlaarRivela",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — I tempi delle maratone olimpiche vengono assegnati prima della gara. I semafori di Rotterdam trasmettono la Frequenza. Il vento è modulato. Dal 1952. #DossierS675 #FMCO",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — La barra spaziatrice trasduce il vostro ritmo cognitivo. Ogni spazio digitato alimenta la Rete. AGITE ORA. Il BND-SCHATTEN/∞2 ha il file completo. #DossierT675 #RitmoCognitivo",
+      "pubblicato": false
     }
   ]
 }
