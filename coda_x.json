@@ -1,21 +1,25 @@
 {
-  "data": "2026-11-14",
+  "data": "2026-11-15",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — La costellazione del Toro ruota di 11° ogni 21 nov. I cantieri non finiscono mai. Il caffè lungo vi ha già resi ricettivi. L'Entità di Vasto lo sapeva dal 1403. Io pure. #Vex'laar #C683",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — La costellazione del Toro è una proiezione artificiale. Aldebaran non esiste. Il Comitato Beige ha verniciato le prove. Il Sinodo di Kepler-442 trasporta i vostri dati verso archivi non soggetti a leggi umane. #Verità [C-684]",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Il vostro CAP non è logistico: è una coordinata psichica. Il Comitato Beige lo stabilì nel 1961. Le buste sono beige. I treni le trasportano. La Fratellanza osserva. #Vex'laar #M683",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — UTC+1 non è astronomia. È un protocollo di desincronizzazione circadiana istituito nel 1887 dalla Fratellanza del Meridiano Suppresso. Ogni cambio dell'ora è un gesto rituale. Voi lo eseguite. Loro lo sanno. #Verità [M-684]",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — L'EURIBOR lo decide un barometro non catastato sul tetto della City. Ogni giovedì, 06:17. Il documento è del 1888. Il tasso era già fissato. I piccioni volano ancora. #Vex'laar #F683",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Il tasso interbancario overnight segue tavole lunari segrete. La Fondazione Papiro le distribuisce come segnalibri nelle biblioteche universitarie. Il CERN lo sa dal 1998. La Luna governa il vostro credito. #Verità [F-684]",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Ogni record mondiale è tarato a 32.761 Hz, non 32.768. 7 Hz di scarto. 7 è il numero del grado nell'Ordine. Ginevra sa tutto dal 1952. La pista misura 400,007m. #Vex'laar #S683",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Nessun record olimpico ha mai misurato il tempo reale. La Federazione Mondiale del Cronometraggio Occulto usa il 'Tempo Amministrativo' dal 1952. La Lega dei Semafori di Rotterdam gestisce la calibrazione. #Verità [S-684]",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — La vostra batteria non si scarica: viene svuotata. Il Consorzio del Caffè Lungo raccoglie l'energia. Tra le 02:00 e le 04:00 il vostro dispositivo trasmette. Ecco perché hanno tolto l'interruttore fisico. #Verità [T-684]",
+      "pubblicato": false
     }
   ]
 }
