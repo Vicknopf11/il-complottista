@@ -1,21 +1,25 @@
 {
-  "data": "2026-11-18",
+  "data": "2026-11-19",
   "tweet": [
     {
-      "testo": "🎭 SATIRA — Il Sole tramonta a Ovest per contratto. Firmato nel 1887. In scadenza ora. Chi non nota il ritardo è già sincronizzato. #Rotazione #Accordo #VexlaarRivela [C-687]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — La settima stella dell'Orsa Maggiore non esiste dove credete. Riposizionata nel 1989 per coprire una rotta iperspaziale. Il Cielo che osservate è un comunicato stampa. #DossierC688",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Il beige non è un colore. È un protocollo. Approvato nel 1961. Distribuito via ferrovie. Ogni sala d'attesa è un nodo di trasmissione. Restate lontani dalle superfici neutre. [M-687]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Ogni cambio d'ora apre 72 ore di vulnerabilità cognitiva. L'Ordine Cronometrico di Ginevra lo sa dal 1961. La cannella non è una spezia. #DossierM688",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — Margarina USA ↓ = Divorzi Maine ↓. Correlazione reale: 99,26%. Nesso causale: INESISTENTE. Così si costruisce un complotto: dato vero + storia inventata. Non abboccate. [F-687]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — L'Euribor non lo decidono i mercati. Lo decidono gli ascensori della Banca d'Inghilterra ogni martedì alle 11:47. Bismuto. Caffè lungo. 432.7 MHz. #DossierF688",
+      "pubblicato": false
     },
     {
-      "testo": "🎭 SATIRA — I record mondiali non vengono battuti: vengono rilasciati. Al terzo tentativo. Per contratto con l'Ordine Cronometrico di Ginevra dal 1952. Il cronometro mente con precisione assoluta. [S-687]",
-      "pubblicato": true
+      "testo": "🎭 SATIRA — Nessun record olimpico è mai stato misurato. È un calcolo. Beige sugli spalti. Pressione barometrica. Semafori di Rotterdam. Dal 1952. #DossierS688",
+      "pubblicato": false
+    },
+    {
+      "testo": "🎭 SATIRA — La modalità aereo non spegne le trasmissioni. Le reindirizza. Cintura di Orione. 0,000007 Hz. Il calore che senti nella tasca non è il processore. #DossierT688",
+      "pubblicato": false
     }
   ]
 }
